@@ -46,14 +46,6 @@ function generateTagButtons(tags) {
         button.addEventListener("click", () => filterByTag(tag));
         tagButtonsContainer.appendChild(button);
     });
-
-    // Add RESET button
-    const resetButton = document.createElement("button");
-    resetButton.classList.add("reset-button");
-    resetButton.textContent = "RESET";
-
-    resetButton.addEventListener("click", resetCards); // Call resetCards
-    tagButtonsContainer.appendChild(resetButton);
 }
 
 // Add a random card button
@@ -110,6 +102,7 @@ function filterByTag(tag) {
     });
 }
 
+
 // Reset all cards to show all questions for the selected topic
 function resetCards() {
     if (!selectedTopic) return; // No topic selected, nothing to reset
@@ -124,8 +117,12 @@ function resetCards() {
     tagButtons.forEach((button) => button.classList.remove("active")); // Optional: add visual indicator
 }
 
+// Attach the reset functionality to the reset button in the header
+document.getElementById("reset-button").addEventListener("click", resetCards);
+
+
 // Fetch JSON data and initialize
-fetch("questions.json")
+fetch("/questions.json")
     .then((response) => response.json())
     .then((data) => {
         questionsData = data; // Store data globally

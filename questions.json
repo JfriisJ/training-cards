@@ -3,188 +3,144 @@
     "topic": "Methodologies for Large-Scale Development",
     "questions": [
       {
-        "question": "What are the core values of SAFe, and how do they align with large-scale development challenges?",
-        "answer": "The core values of SAFe are Alignment, Built-in Quality, Transparency, and Program Execution. These values ensure that large-scale organizations stay focused on common goals, maintain high-quality outcomes, and foster clear communication across all levels of the organization.",
-        "tags": [
-          "SAFe"
-        ]
+        "question": "What are the core values of SAFe?",
+        "answer": "The core values of SAFe are Alignment, Built-in Quality, Transparency, and Program Execution. These values help organizations stay focused, maintain quality, and improve communication.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "Explain how SAFe addresses the challenges of scaling Agile in large organizations. What key practices or levels are critical to its success?",
-        "answer": "SAFe addresses scaling challenges by introducing four levels: Team, Program, Large Solution, and Portfolio. Key practices include Agile Release Trains (ARTs) for synchronization, Program Increment (PI) Planning for alignment, and cadence-based delivery to manage dependencies.",
-        "tags": [
-          "SAFe",
-          "Scaling Challenges"
-        ]
+        "question": "How does SAFe handle scaling challenges?",
+        "answer": "SAFe uses four levels: Team, Program, Large Solution, and Portfolio. Key practices include Agile Release Trains (ARTs) for coordination and Program Increment (PI) Planning for alignment.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "What are the key differences between SAFe and LeSS in their approach to scaling Agile?",
-        "answer": "SAFe uses a structured, hierarchical approach with multiple levels and defined roles (e.g., RTE, Solution Architect). LeSS focuses on decentralization, simplicity, and self-organization with a single Product Backlog and one Product Owner for all teams.",
-        "tags": [
-          "SAFe",
-          "LeSS",
-          "Comparison"
-        ]
+        "question": "What is the difference between SAFe and LeSS?",
+        "answer": "SAFe has a structured, hierarchical approach with multiple levels and roles. LeSS focuses on simplicity, decentralization, and uses one Product Backlog and one Product Owner.",
+        "tags": ["Comparison"]
       },
       {
-        "question": "How does SAFe ensure alignment across multiple teams working on the same product or solution?",
-        "answer": "SAFe ensures alignment through Agile Release Trains (ARTs), Program Increment (PI) Planning, Portfolio-level Epics and value streams, and synchronized cadence-based planning across all teams.",
-        "tags": [
-          "SAFe",
-          "Alignment"
-        ]
+        "question": "How does SAFe keep teams aligned?",
+        "answer": "SAFe uses Agile Release Trains (ARTs), Program Increment (PI) Planning, and synchronized planning to keep all teams aligned.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "In LeSS, how is coordination between multiple teams achieved without adding unnecessary complexity?",
-        "answer": "LeSS achieves coordination through a single Product Backlog managed by one Product Owner, Sprint Planning 1 for cross-team alignment, Sprint Planning 2 for team-specific tasks, and Scrum of Scrums for regular collaboration.",
-        "tags": [
-          "LeSS",
-          "Coordination"
-        ]
+        "question": "How do teams coordinate in LeSS?",
+        "answer": "Teams in LeSS coordinate using a single Product Backlog, Sprint Planning 1 for alignment, Sprint Planning 2 for team-specific tasks, and Scrum of Scrums.",
+        "tags": ["LeSS"]
       },
       {
-        "question": "What are the main challenges organizations face when adopting SAFe, and how can they address them effectively?",
-        "answer": "Challenges include complexity, resistance to change, and upfront investment. These can be addressed with strong leadership support, comprehensive training, and starting with a pilot Agile Release Train (ART) to gradually introduce SAFe practices.",
-        "tags": [
-          "SAFe",
-          "Adoption Challenges"
-        ]
+        "question": "What are the challenges of adopting SAFe?",
+        "answer": "Challenges include complexity, resistance to change, and high upfront costs. These can be solved with strong leadership, training, and starting with a pilot Agile Release Train (ART).",
+        "tags": ["SAFe"]
       },
       {
-        "question": "How does LeSS ensure that teams remain autonomous while working on a large-scale product?",
-        "answer": "LeSS ensures autonomy by allowing teams to self-organize during Sprint Planning 2 while aligning on shared goals in Sprint Planning 1. Teams communicate directly and avoid hierarchical interference, maintaining decentralized decision-making.",
-        "tags": [
-          "LeSS",
-          "Autonomy"
-        ]
+        "question": "How does LeSS keep teams autonomous?",
+        "answer": "LeSS keeps teams autonomous by allowing them to self-organize during Sprint Planning 2 while aligning on shared goals in Sprint Planning 1. Teams communicate directly and avoid hierarchy.",
+        "tags": ["LeSS"]
       },
       {
-        "question": "What are the key success factors for adopting SAFe in a large organization?",
-        "answer": "Key success factors include leadership support, comprehensive training, clear roles, effective Program Increment (PI) Planning, and starting with a pilot Agile Release Train (ART) to build confidence and refine practices.",
-        "tags": [
-          "SAFe",
-          "Success Factors"
-        ]
+        "question": "What are the success factors for adopting SAFe?",
+        "answer": "Success factors include leadership support, training, clear roles, Program Increment (PI) Planning, and starting with a pilot Agile Release Train (ART).",
+        "tags": ["SAFe"]
       },
       {
-        "question": "What is the purpose of Agile Release Trains (ARTs) in SAFe?",
-        "answer": "ARTs are teams of agile teams, consisting of 50-125 people, working together to deliver value in a synchronized manner through Program Increments (PIs). They align teams with organizational goals and ensure continuous delivery of value.",
-        "tags": [
-          "SAFe",
-          "AgileReleaseTrain"
-        ]
+        "question": "What is SAFe?",
+        "answer": "SAFe stands for Scaled Agile Framework. It is a framework to help large organizations apply Agile at scale across multiple teams and levels.",
+        "tags": ["SAFe"]
+      },
+      {
+        "question": "What is the main purpose of LeSS?",
+        "answer": "LeSS, or Large-Scale Scrum, is used to scale Scrum for large organizations while keeping it simple and decentralized.",
+        "tags": ["LeSS"]
+      },
+      {
+        "question": "What are Agile Release Trains (ARTs)?",
+        "answer": "ARTs are teams of teams (50-125 people) that work together on a shared goal using SAFe practices.",
+        "tags": ["SAFe"]
+      },
+      {
+        "question": "What is a Program Increment (PI) in SAFe?",
+        "answer": "A Program Increment is a planning cycle of 8-12 weeks where teams align, plan, and deliver work together.",
+        "tags": ["SAFe"]
+      },
+      {
+        "question": "How does LeSS handle product ownership?",
+        "answer": "LeSS uses one Product Owner to manage a single Product Backlog across all teams.",
+        "tags": ["LeSS"]
+      },
+      {
+        "question": "What is the role of a Product Owner in SAFe?",
+        "answer": "In SAFe, each team has its own Product Owner who manages the Team Backlog and reports to Product Managers.",
+        "tags": ["SAFe"]
+      },
+      {
+        "question": "What is the role of a Release Train Engineer (RTE)?",
+        "answer": "The RTE coordinates Agile Release Trains (ARTs), ensuring teams align and deliver on time.",
+        "tags": ["SAFe"]
       },
       {
         "question": "What are the four levels of SAFe?",
-        "answer": "SAFe is structured into four levels: Team, Program, Large Solution, and Portfolio. Each level adds roles and processes to manage increasingly complex and large-scale projects.",
-        "tags": [
-          "SAFe",
-          "Levels"
-        ]
+        "answer": "The four levels of SAFe are Team, Program, Large Solution, and Portfolio.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "How does LeSS handle sprint planning for multiple teams?",
-        "answer": "LeSS uses two types of sprint planning: Sprint Planning 1, where all teams collaboratively decide on the backlog items to work on, and Sprint Planning 2, where individual teams create detailed plans for their tasks.",
-        "tags": [
-          "LeSS",
-          "SprintPlanning"
-        ]
+        "question": "What is the main difference between SAFe and Scrum?",
+        "answer": "SAFe is for large organizations and adds structure and hierarchy, while Scrum is for small teams and focuses on simplicity.",
+        "tags": ["Comparison"]
       },
       {
-        "question": "What is the role of a Release Train Engineer (RTE) in SAFe?",
-        "answer": "The RTE acts as a servant leader for the Agile Release Train, facilitating Program Increment (PI) Planning, managing risks, and ensuring smooth execution and alignment across teams.",
-        "tags": [
-          "SAFe",
-          "Roles"
-        ]
+        "question": "What is Scrum of Scrums?",
+        "answer": "Scrum of Scrums is a coordination meeting for representatives from multiple Scrum teams to align and resolve dependencies.",
+        "tags": ["LeSS"]
       },
       {
-        "question": "What are common challenges in adopting LeSS?",
-        "answer": "Challenges include dual leadership, excessive meetings, cultural differences, lack of agile mindset, and resistance to change from traditional management structures.",
-        "tags": [
-          "LeSS",
-          "Challenges"
-        ]
+        "question": "What is the goal of PI Planning?",
+        "answer": "The goal of PI Planning is to align all teams on objectives, dependencies, and priorities for the next Program Increment.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "What is the importance of the Product Owner in LeSS?",
-        "answer": "In LeSS, the Product Owner manages a single, central product backlog and is responsible for prioritizing work across multiple teams to ensure alignment with customer needs.",
-        "tags": [
-          "LeSS",
-          "Roles"
-        ]
+        "question": "How does LeSS encourage learning and adaptation?",
+        "answer": "LeSS encourages frequent retrospectives, direct communication, and experimentation to improve processes continuously.",
+        "tags": ["LeSS"]
       },
       {
-        "question": "How does SAFe support large and complex solutions?",
-        "answer": "SAFe includes a Large Solution level, which introduces roles like Solution Train Engineer and Solution Architect to manage dependencies, alignment, and delivery of complex, multi-team solutions.",
-        "tags": [
-          "SAFe",
-          "LargeSolutions"
-        ]
+        "question": "What is a Product Backlog?",
+        "answer": "A Product Backlog is a prioritized list of work items that the team will deliver, managed by the Product Owner.",
+        "tags": ["Scrum", "LeSS"]
       },
       {
-        "question": "What is the 'Whole Product Focus' principle in LeSS?",
-        "answer": "This principle emphasizes having one product backlog, one Product Owner, and one shippable product increment per sprint, regardless of the number of teams involved.",
-        "tags": [
-          "LeSS",
-          "Principles"
-        ]
+        "question": "What is the focus of the Portfolio level in SAFe?",
+        "answer": "The Portfolio level focuses on aligning organizational strategy with execution through Epics and value streams.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "How does SAFe incorporate lean principles?",
-        "answer": "SAFe uses lean principles such as value stream mapping, flow optimization, and waste elimination to enhance efficiency and ensure value delivery to the customer.",
-        "tags": [
-          "SAFe",
-          "LeanPrinciples"
-        ]
+        "question": "How does SAFe support continuous improvement?",
+        "answer": "SAFe supports continuous improvement through Inspect and Adapt events, regular retrospectives, and feedback loops.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "What are common artifacts in LeSS?",
-        "answer": "Common artifacts include a product backlog, sprint backlog, product increments, and the definition of done (DoD), which ensures quality standards are met across teams.",
-        "tags": [
-          "LeSS",
-          "Artifacts"
-        ]
+        "question": "What is the difference between Sprint Planning 1 and Sprint Planning 2 in LeSS?",
+        "answer": "Sprint Planning 1 is for cross-team alignment on goals, while Sprint Planning 2 is for team-specific task planning.",
+        "tags": ["LeSS"]
       },
       {
-        "question": "What are the benefits of SAFe?",
-        "answer": "SAFe improves productivity, enhances communication, aligns team efforts with business goals, and supports frequent and predictable deliveries of high-quality solutions.",
-        "tags": [
-          "SAFe",
-          "Benefits"
-        ]
+        "question": "What are the main benefits of SAFe?",
+        "answer": "The main benefits of SAFe include improved alignment, higher productivity, better quality, and predictable delivery at scale.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "What are the four components of LeSS?",
-        "answer": "The four components are Rules, Principles, Guides, and Experiments, which collectively guide organizations in scaling Scrum effectively while maintaining simplicity.",
-        "tags": [
-          "LeSS",
-          "Framework"
-        ]
+        "question": "What is a Community of Practice (CoP)?",
+        "answer": "A Community of Practice is a group of people across teams sharing knowledge and best practices.",
+        "tags": ["LeSS", "SAFe"]
       },
       {
-        "question": "What is a Value Stream in SAFe?",
-        "answer": "A value stream represents the sequence of steps an organization uses to deliver value to customers, often spanning multiple Agile Release Trains.",
-        "tags": [
-          "SAFe",
-          "ValueStream"
-        ]
+        "question": "What are the main goals of SAFe?",
+        "answer": "The main goals of SAFe are to scale Agile practices, align teams with business strategy, and deliver value faster.",
+        "tags": ["SAFe"]
       },
       {
-        "question": "What are common adaptations made in LeSS?",
-        "answer": "Adaptations often include adding a domain level, combining with frameworks like Kanban or DevOps, and using a 'one-calendar' approach to synchronize sprints across teams.",
-        "tags": [
-          "LeSS",
-          "Adaptations"
-        ]
-      },
-      {
-        "question": "How does SAFe promote continuous improvement?",
-        "answer": "SAFe encourages regular retrospectives at all levels and provides mechanisms like inspect and adapt workshops to identify and implement improvements iteratively.",
-        "tags": [
-          "SAFe",
-          "ContinuousImprovement"
-        ]
+        "question": "What is the focus of LeSS Huge?",
+        "answer": "LeSS Huge is for scaling Scrum to more than 8 teams, introducing Requirement Areas with Area Product Owners.",
+        "tags": ["LeSS"]
       }
     ]
   },
