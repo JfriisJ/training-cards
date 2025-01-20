@@ -1,30 +1,62 @@
 // Select existing DOM elements
-const topicButtonsContainer = document.getElementById("topic-buttons");
+const topicMenuButton = document.getElementById("menu-button");
+const topicDropdown = document.getElementById("dropdown");
+const tagMenuButton = document.getElementById("tag-menu-button");
+const tagDropdown = document.getElementById("tag-dropdown");
 const tagButtonsContainer = document.getElementById("tag-buttons");
 const tagsContainer = document.getElementById("tags-container");
 const cardGrid = document.getElementById("card-grid");
 const resetButton = document.getElementById("reset-button");
-const randomButton = document.getElementById("random-button"); // Direct reference to the button
+const randomButton = document.getElementById("random-button");
+const topicHeading = document.getElementById("topic-heading");
+
 let selectedTopic = null;
 let questionsData = [];
 
-// Generate topic buttons dynamically
-function generateTopicButtons(data) {
-    topicButtonsContainer.innerHTML = ""; // Clear existing buttons
-    data.forEach(({ topic }) => {
-        const button = document.createElement("button");
-        button.classList.add("topic-button");
-        button.textContent = topic;
+// Function to set the topic heading
+function updateTopicHeading() {
+    topicHeading.textContent = selectedTopic
+        ? `Current Topic: ${selectedTopic}`
+        : "Study Card";
+}
 
-        button.addEventListener("click", () => {
+// Populate the topic menu dynamically
+function generateTopicMenu(data) {
+    topicDropdown.innerHTML = ""; // Clear existing menu items
+    data.forEach(({ topic }) => {
+        const li = document.createElement("li");
+        li.textContent = topic;
+        li.classList.add("dropdown-item");
+
+        li.addEventListener("click", () => {
             selectedTopic = topic; // Update selectedTopic
+            updateTopicHeading(); // Update the topic heading
             const selectedData = data.find((item) => item.topic === topic);
             if (selectedData) {
                 displayTagsAndQuestions(selectedData.questions);
+                topicDropdown.style.display = "none"; // Hide dropdown after selection
             }
         });
 
-        topicButtonsContainer.appendChild(button);
+        topicDropdown.appendChild(li);
+    });
+}
+
+// Generate tag dropdown dynamically
+function generateTagDropdown(tags) {
+    tagDropdown.innerHTML = ""; // Clear existing items
+
+    tags.forEach((tag) => {
+        const li = document.createElement("li");
+        li.textContent = tag;
+        li.classList.add("dropdown-item");
+
+        li.addEventListener("click", () => {
+            filterByTag(tag);
+            tagDropdown.style.display = "none"; // Hide dropdown after selection
+        });
+
+        tagDropdown.appendChild(li);
     });
 }
 
@@ -32,22 +64,8 @@ function generateTopicButtons(data) {
 function displayTagsAndQuestions(questionsData) {
     tagsContainer.style.display = "block"; // Show the tags section
     const uniqueTags = [...new Set(questionsData.flatMap((q) => q.tags))];
-    generateTagButtons(uniqueTags);
+    generateTagDropdown(uniqueTags); // Generate dropdown for tags
     renderCards(questionsData);
-}
-
-// Generate tag buttons dynamically
-function generateTagButtons(tags) {
-    tagButtonsContainer.innerHTML = ""; // Clear existing buttons
-
-    tags.forEach((tag) => {
-        const button = document.createElement("button");
-        button.classList.add("tag-button");
-        button.textContent = tag;
-
-        button.addEventListener("click", () => filterByTag(tag));
-        tagButtonsContainer.appendChild(button);
-    });
 }
 
 // Show a random card from the selected topic
@@ -57,14 +75,12 @@ function showRandomCard() {
         return;
     }
 
-    // Find the questions for the selected topic
     const topicData = questionsData.find((item) => item.topic === selectedTopic);
     if (!topicData || topicData.questions.length === 0) {
         alert("No questions available for the selected topic.");
         return;
     }
 
-    // Pick a random question from the selected topic's questions
     const randomIndex = Math.floor(Math.random() * topicData.questions.length);
     const randomQuestion = topicData.questions[randomIndex];
     renderCards([randomQuestion]); // Render only the random question
@@ -106,7 +122,7 @@ function filterByTag(tag) {
 
 // Reset all cards to show all questions for the selected topic
 function resetCards() {
-    if (!selectedTopic) return; // No topic selected, nothing to reset
+    if (!selectedTopic) return;
 
     const topicData = questionsData.find((item) => item.topic === selectedTopic);
     if (topicData) {
@@ -114,8 +130,19 @@ function resetCards() {
     }
 }
 
+// Toggle the dropdown menu
+function toggleDropdown(dropdown) {
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
+
+topicMenuButton.addEventListener("click", () => toggleDropdown(topicDropdown));
+tagMenuButton.addEventListener("click", () => toggleDropdown(tagDropdown));
+
 // Attach the reset functionality to the reset button in the header
-resetButton.addEventListener("click", resetCards);
+resetButton.addEventListener("click", () => {
+    resetCards();
+    updateTopicHeading(); // Update heading to reflect the reset state
+});
 
 // Attach the random card functionality to the random button
 randomButton.addEventListener("click", showRandomCard);
@@ -125,6 +152,7 @@ fetch("/questions.json")
     .then((response) => response.json())
     .then((data) => {
         questionsData = data; // Store data globally
-        generateTopicButtons(data);
+        generateTopicMenu(data);
+        updateTopicHeading(); // Set default topic heading
     })
     .catch((error) => console.error("Error loading questions:", error));

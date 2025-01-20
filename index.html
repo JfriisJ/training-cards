@@ -10,7 +10,7 @@
     html, body {
         font-family: 'Poppins', sans-serif;
         height: 100%;
-        background: #424874;
+        background: linear-gradient(135deg, #424874, #DCD6F7);
         min-height: 100%;
         overflow-x: hidden;
     }
@@ -50,13 +50,21 @@
         height: 45px;
         text-align: center;
         line-height: 45px;
-        transition: background 0.3s, color 0.3s;
+        transition: background 0.3s, color 0.3s, transform 0.2s ease;
     }
 
     .reset-button:hover,
     .random-button:hover {
         background: #424874;
         color: #F4EEFF;
+        transform: scale(1.1);
+    }
+
+    .reset-button:disabled,
+    .random-button:disabled {
+        background: #ccc;
+        color: #666;
+        cursor: not-allowed;
     }
 
     /* SEARCH TAGS */
@@ -101,6 +109,12 @@
         overflow: visible;
         width: 300px;
         height: 400px;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
     }
 
     .card-inner {
@@ -131,6 +145,15 @@
 
     .back-flip-inverted-diagonal {
         transform: rotate3d(1, -1, 0, 180deg);
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card p {
+        font-size: 1rem;
     }
 
     /* FOOTER */
@@ -185,7 +208,7 @@
         color: #F4EEFF;
     }
 
-    /* TOPIC BAR */
+    /* Topic Bar */
     .topic-bar {
         background-color: #424874;
         padding: 1rem 2rem;
@@ -193,6 +216,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
 
     .topic-bar .topics-description {
@@ -217,34 +243,137 @@
         color: #424874;
     }
 
+    @media (max-width: 768px) {
+        .card-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .topic-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 20;
+        }
+
+        header {
+            margin-top: 80px; /* Offset for fixed topic bar */
+        }
+
+        .reset-container {
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+    }
+    /* Dropdown Menu */
+    .topic-menu {
+        position: relative;
+        display: inline-block;
+    }
+
+    .menu-button {
+        all: unset;
+        border: 2px solid #F4EEFF;
+        border-radius: 35px;
+        background: transparent;
+        color: #F4EEFF;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 0.5rem 1.5rem;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .menu-button:hover {
+        background: #F4EEFF;
+        color: #424874;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        background-color: #DCD6F7;
+        min-width: 200px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .dropdown li {
+        list-style: none;
+        padding: 0.5rem 1rem;
+        color: #424874;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .dropdown li:hover {
+        background-color: #F4EEFF;
+        color: #424874;
+    }
+
+    /* Action Buttons */
+    .action-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .reset-button,
+    .random-button {
+        all: unset;
+        border: 2px solid #F4EEFF;
+        border-radius: 35px;
+        background: transparent;
+        color: #F4EEFF;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 0.5rem 1.5rem;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .reset-button:hover,
+    .random-button:hover {
+        background: #F4EEFF;
+        color: #424874;
+    }
 </style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/0d953e133b.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d953e133b.js" crossorigin="anonymous"></script>
     <title>Flip-cards for Interview Prep</title>
 </head>
 <body>
 
 <!-- TOPIC BAR -->
 <div class="topic-bar">
-    <div class="topic-buttons" id="topic-buttons">
-        <!-- Topic buttons will be dynamically generated here -->
+    <div class="topic-menu">
+        <button class="menu-button" id="menu-button">Topics ▼</button>
+        <ul class="dropdown" id="dropdown">
+            <!-- Topic items will be dynamically added here -->
+        </ul>
     </div>
-</div>
-<!-- HEADER -->
-<header>
-    <div class="search-tags" id="tags-container" style="display: none;">
-        <p class="tags-description">Now select a tag:</p>
-        <div class="tag-buttons" id="tag-buttons">
-            <!-- Tag buttons will be dynamically generated here -->
-        </div>
-    </div>
-    <div class="reset-container">
+    <div class="topic-heading" id="topic-heading">Selected Topic: none</div>
+    <div class="action-buttons">
         <button class="reset-button" id="reset-button">RESET</button>
         <button class="random-button" id="random-button">RANDOM CARD</button>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+    <div class="search-tags" style="display: none;" id="tags-container">
+        <p class="tags-description">Select a tag:</p>
+        <div class="tag-buttons" id="tag-buttons">
+            <div class="tag-menu">
+                <button class="menu-button" id="tag-menu-button">Tags ▼</button>
+                <ul class="dropdown" id="tag-dropdown">
+                    <!-- Tag items will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
 
