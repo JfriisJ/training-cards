@@ -448,5 +448,290 @@
         "tags": ["Testing"]
       }
     ]
+  },
+  {
+    "topic": "Software Maintenance and Security",
+    "questions": [
+      {
+        "question": "What is GenProg?",
+        "answer": "GenProg is a genetic programming-based approach for automated software repair. It uses mutation and crossover operations to evolve program variants that fix identified bugs, guided by a fitness function that prioritizes passing test cases.",
+        "tags": ["GenProg", "Software Repair"]
+      },
+      {
+        "question": "Why is symbolic execution used in SemFix?",
+        "answer": "Symbolic execution is used in SemFix to generate constraints that represent the expected behavior of a buggy statement. This enables the synthesis of a repair expression that satisfies these constraints.",
+        "tags": ["SemFix", "Symbolic Execution"]
+      },
+      {
+        "question": "How does semantic repair differ from search-based repair?",
+        "answer": "Semantic repair uses program synthesis and symbolic execution to generate constraints and repairs, while search-based repair relies on generating and validating program variants using mutation and crossover strategies.",
+        "tags": ["Semantic Repair", "Comparison"]
+      },
+      {
+        "question": "What are the limitations of search-based program repair?",
+        "answer": "Search-based program repair may overfit to test cases, potentially removing functionality or failing to generalize repairs. It also has a limited search space for mutations and is computationally expensive.",
+        "tags": ["Search-Based Repair", "Limitations"]
+      },
+      {
+        "question": "Why is program repair critical in software engineering?",
+        "answer": "Program repair addresses bugs efficiently, reduces maintenance costs, and enhances software reliability, especially for critical systems where bugs can lead to significant failures or security risks.",
+        "tags": ["Software Repair", "Importance"]
+      },
+      {
+        "question": "What is automatic program repair (APR)?",
+        "answer": "APR is a method to fix software bugs automatically using techniques like fault localization, mutation, and validation against test suites.",
+        "tags": ["APR"]
+      },
+      {
+        "question": "Why is fault localization important in program repair?",
+        "answer": "Fault localization identifies the buggy parts of code, reducing the search space for applying fixes and improving repair efficiency.",
+        "tags": ["Fault Localization"]
+      },
+      {
+        "question": "What is the difference between search-based and semantic repair?",
+        "answer": "Search-based repair generates and tests program variants, while semantic repair uses constraints and synthesis to generate correct code.",
+        "tags": ["Comparison"]
+      },
+      {
+        "question": "How does GenProg use genetic programming?",
+        "answer": "GenProg applies mutation and crossover operations to generate program variants, guided by a fitness function to prioritize fixes.",
+        "tags": ["GenProg"]
+      },
+      {
+        "question": "What is SemFix?",
+        "answer": "SemFix is a repair approach that uses symbolic execution and synthesis to generate patches for buggy programs.",
+        "tags": ["SemFix"]
+      },
+      {
+        "question": "What are common limitations of search-based repair?",
+        "answer": "Search-based repair may overfit test cases, fail to preserve functionality, and have a limited exploration space.",
+        "tags": ["Limitations"]
+      },
+      {
+        "question": "Why is symbolic execution used in semantic repair?",
+        "answer": "It creates constraints that define the expected behavior of a program, enabling accurate repair synthesis.",
+        "tags": ["Symbolic Execution"]
+      },
+      {
+        "question": "What is the main goal of a fitness function in GenProg?",
+        "answer": "The fitness function evaluates program variants to select the best candidates for further mutation and crossover.",
+        "tags": ["GenProg"]
+      },
+      {
+        "question": "How do repairs in GenProg differ from those in SemFix?",
+        "answer": "GenProg relies on evolving program variants through genetic programming, while SemFix synthesizes repairs directly using constraints.",
+        "tags": ["Comparison"]
+      },
+      {
+        "question": "What is the advantage of semantic repair over search-based repair?",
+        "answer": "Semantic repair can create new code that doesn't exist in the program, whereas search-based repair relies on existing code.",
+        "tags": ["Semantic Repair"]
+      },
+      {
+        "question": "What is a repair constraint in SemFix?",
+        "answer": "A repair constraint defines the conditions a program must satisfy to pass all test cases after a fix is applied.",
+        "tags": ["SemFix"]
+      },
+      {
+        "question": "Why does GenProg use mutation and crossover?",
+        "answer": "These operations mimic biological evolution to explore potential program variants and improve repair quality.",
+        "tags": ["GenProg"]
+      },
+      {
+        "question": "What is the purpose of fault localization in APR?",
+        "answer": "It narrows down the parts of code that are likely buggy, saving time during repair generation.",
+        "tags": ["Fault Localization"]
+      },
+      {
+        "question": "How does SPR differ from GenProg?",
+        "answer": "SPR uses pre-defined repair templates and synthesizes conditions, while GenProg relies on genetic programming.",
+        "tags": ["Comparison"]
+      },
+      {
+        "question": "What are the main limitations of semantic repair?",
+        "answer": "Semantic repair struggles with path explosion, symbolic indexing in arrays, and memory aliasing.",
+        "tags": ["Limitations"]
+      },
+      {
+        "question": "What is a test suite in APR?",
+        "answer": "A test suite is a set of tests used to validate program behavior and ensure that repaired programs meet the required functionality.",
+        "tags": ["APR"]
+      },
+      {
+        "question": "What is the role of symbolic execution in finding bugs?",
+        "answer": "Symbolic execution explores program paths to identify potential faults and generate repair constraints.",
+        "tags": ["Symbolic Execution"]
+      },
+      {
+        "question": "Why is overfitting a problem in search-based repair?",
+        "answer": "Overfitting creates repairs that pass the test suite but may break untested functionality.",
+        "tags": ["Limitations"]
+      },
+      {
+        "question": "What is the difference between SPR and semantic repair?",
+        "answer": "SPR uses templates and condition synthesis, while semantic repair focuses on constraint-based synthesis.",
+        "tags": ["Comparison"]
+      },
+      {
+        "question": "How do GenProg and SemFix approach APR differently?",
+        "answer": "GenProg evolves program variants through genetic programming, while SemFix directly synthesizes repairs from constraints.",
+        "tags": ["Comparison"]
+      }
+    ]
+  },
+  {
+    "topic": "Software Quality Assurance",
+    "questions": [
+      {
+        "question": "What is software quality assurance?",
+        "answer": "Software Quality Assurance (SQA) is a set of activities aimed at ensuring the correctness and quality of the software. It works in parallel with software development and involves reviews, audits, testing, and risk management.",
+        "tags": ["SQA"]
+      },
+      {
+        "question": "Why is program slicing useful?",
+        "answer": "Program slicing is useful for debugging, maintenance, and program understanding as it isolates statements that affect the execution of a specific criterion, making analysis more focused and efficient.",
+        "tags": ["Program Slicing"]
+      },
+      {
+        "question": "How does mutation-based fault localization work?",
+        "answer": "Mutation-based fault localization introduces defects (mutants) into the program and assesses how test cases interact with these mutants. Faulty locations are inferred from mutants killed by failing tests.",
+        "tags": ["Fault Localization"]
+      },
+      {
+        "question": "What is the difference between backward slicing and forward slicing?",
+        "answer": "Backward slicing identifies statements that can influence a given criterion, while forward slicing identifies statements that can be influenced by the criterion. Both use program dependency graphs for analysis.",
+        "tags": ["Program Slicing"]
+      },
+      {
+        "question": "What is the role of data flow analysis in software testing?",
+        "answer": "Data flow analysis tracks the flow of values between statements in a program to identify dependencies, potential bugs, or optimization opportunities. It is crucial for ensuring correctness and reliability.",
+        "tags": ["Data Flow Analysis"]
+      },
+      {
+        "question": "Why is correctness considered relative in software development?",
+        "answer": "Correctness is relative because it depends on the specifications of the intended behavior. A program is considered correct if its implementation aligns consistently with these explicit or implicit specifications.",
+        "tags": ["Correctness"]
+      },
+      {
+        "question": "How does static analysis differ from dynamic analysis?",
+        "answer": "Static analysis examines the program's behavior without executing it, focusing on safety properties and correctness. Dynamic analysis observes the program during execution, focusing on runtime behavior and bugs.",
+        "tags": ["Static Analysis"]
+      },
+      {
+        "question": "What makes AutoFL an innovative fault localization technique?",
+        "answer": "AutoFL uses Large Language Models (LLMs) to not only locate faults but also explain their root causes. It overcomes LLM context limitations by allowing autonomous navigation of code repositories.",
+        "tags": ["AutoFL"]
+      },
+      {
+        "question": "How does the Tarantula algorithm calculate suspiciousness scores?",
+        "answer": "Tarantula assigns a suspiciousness score to program statements based on the proportion of failing tests that execute a statement relative to the total tests that execute it, assisting fault localization.",
+        "tags": ["Fault Localization"]
+      },
+      {
+        "question": "What are the key advantages of using program dependence graphs (PDGs) for slicing?",
+        "answer": "PDGs enable efficient slicing by representing data and control dependencies as a graph, allowing for straightforward reachability analysis to identify relevant program statements for a slicing criterion.",
+        "tags": ["Program Dependence Graph"]
+      },
+      {
+        "question": "What is a fault in software?",
+        "answer": "A fault is a defect in the software that causes an incorrect value or behavior, such as an uninitialized variable or an incorrect calculation.",
+        "tags": ["Fault"]
+      },
+      {
+        "question": "Why do we need software analysis?",
+        "answer": "Software analysis helps ensure that the software behaves correctly, meets its requirements, and is free from bugs by using techniques, methods, and tools.",
+        "tags": ["Software Analysis"]
+      },
+      {
+        "question": "How does static analysis work?",
+        "answer": "Static analysis examines the program's code without running it, checking for errors like null-pointer dereferences or data overflows.",
+        "tags": ["Static Analysis"]
+      },
+      {
+        "question": "What is program slicing?",
+        "answer": "Program slicing extracts parts of the code that directly affect a specific computation, making debugging and understanding easier.",
+        "tags": ["Program Slicing"]
+      },
+      {
+        "question": "What is the purpose of fault localization?",
+        "answer": "Fault localization identifies the parts of the code that cause bugs, helping developers fix issues faster.",
+        "tags": ["Fault Localization"]
+      },
+      {
+        "question": "What is mutation testing?",
+        "answer": "Mutation testing introduces small changes (mutants) to code and evaluates whether tests can detect these changes to ensure robust test coverage.",
+        "tags": ["Mutation Testing"]
+      },
+      {
+        "question": "Why is AutoFL special?",
+        "answer": "AutoFL combines fault localization with explanations, using language models to identify and explain bugs in natural language.",
+        "tags": ["AutoFL"]
+      },
+      {
+        "question": "What is the difference between testing and static analysis?",
+        "answer": "Testing runs the program with different inputs to find bugs, while static analysis checks the code without running it to find potential issues.",
+        "tags": ["Testing", "Static Analysis"]
+      },
+      {
+        "question": "How is dynamic slicing different from static slicing?",
+        "answer": "Dynamic slicing considers the actual program execution to identify relevant statements, while static slicing considers all possible executions.",
+        "tags": ["Program Slicing"]
+      },
+      {
+        "question": "What is the role of control flow graphs?",
+        "answer": "Control flow graphs represent the flow of control in a program using nodes and edges, helping analyze program behavior and dependencies.",
+        "tags": ["Control Flow"]
+      },
+      {
+        "question": "How is a bug different from a fault?",
+        "answer": "A bug is an observed error in software behavior, while a fault is the code defect causing the bug.",
+        "tags": ["Bug", "Fault"]
+      },
+      {
+        "question": "What is the main goal of software quality assurance?",
+        "answer": "The goal of SQA is to ensure software is correct, reliable, and meets quality standards through testing, reviews, and risk management.",
+        "tags": ["SQA"]
+      },
+      {
+        "question": "Why are data flow dependencies important?",
+        "answer": "Data flow dependencies show how data moves between program statements, helping find bugs and optimize the program.",
+        "tags": ["Data Flow"]
+      },
+      {
+        "question": "What is the difference between backward and forward slicing?",
+        "answer": "Backward slicing identifies what affects a given point in the program, while forward slicing identifies what the given point affects.",
+        "tags": ["Program Slicing"]
+      },
+      {
+        "question": "How does the Tarantula algorithm work?",
+        "answer": "The Tarantula algorithm calculates how suspicious each statement is based on how often it is executed in failing versus passing tests.",
+        "tags": ["Tarantula"]
+      },
+      {
+        "question": "Why do we need interprocedural slicing?",
+        "answer": "Interprocedural slicing analyzes dependencies across multiple functions or methods, helping debug complex programs.",
+        "tags": ["Interprocedural"]
+      },
+      {
+        "question": "What is the difference between control dependence and data dependence?",
+        "answer": "Control dependence shows how one statement's execution depends on another, while data dependence shows how data flows between statements.",
+        "tags": ["Dependencies"]
+      },
+      {
+        "question": "What is an example of a dynamic slicing tool?",
+        "answer": "A dynamic slicing tool example is TAO, which analyzes Java bytecode traces to find execution-specific slices.",
+        "tags": ["Dynamic Slicing"]
+      },
+      {
+        "question": "What is the purpose of program dependence graphs?",
+        "answer": "Program dependence graphs represent data and control dependencies in a program to simplify slicing and analysis.",
+        "tags": ["PDG"]
+      },
+      {
+        "question": "What is spectrum-based fault localization?",
+        "answer": "Spectrum-based fault localization identifies suspicious code by comparing the execution traces of passing and failing tests.",
+        "tags": ["Fault Localization"]
+      }
+    ]
   }
 ]
