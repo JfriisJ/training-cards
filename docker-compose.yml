@@ -8,9 +8,9 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./:/usr/share/nginx/html
     restart: unless-stopped
-#    networks:
-#      - cloudflare
-#
-#networks:
-#  cloudflare:
-#    external: true
+    networks:
+      - cloudflare
+
+networks:
+  cloudflare:
+    external: true
