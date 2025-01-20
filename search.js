@@ -1,42 +1,49 @@
-const searchBar = document.getElementById("searchbar");
+const topicButtonsContainer = document.getElementById("topic-buttons");
 const tagButtonsContainer = document.getElementById("tag-buttons");
-let questions, cards; // Declare globally to update after rendering
+const tagsContainer = document.getElementById("tags-container");
+const cardGrid = document.getElementById("card-grid");
+let selectedTopic = null;
+let questionsData = [];
 
-// Function to filter cards by search keyword
-searchBar.addEventListener("keyup", function (e) {
-    const keyword = e.target.value.toLowerCase();
+// Generate topic buttons dynamically
+function generateTopicButtons(data) {
+    topicButtonsContainer.innerHTML = ""; // Clear existing buttons
+    data.forEach(({ topic }) => {
+        const button = document.createElement("button");
+        button.classList.add("topic-button");
+        button.textContent = topic;
 
-    questions.forEach((question) => {
-        const questionTitle = question.textContent.toLowerCase();
-        const card = question.closest(".card");
-        card.style.display = questionTitle.includes(keyword) ? "block" : "none";
-    });
-});
+        button.addEventListener("click", () => {
+            selectedTopic = topic; // Update selectedTopic
+            const selectedData = data.find((item) => item.topic === topic);
+            if (selectedData) {
+                displayTagsAndQuestions(selectedData.questions);
+                addRandomCardButton(selectedData.questions); // Add random card functionality
+            }
+        });
 
-// Function to filter cards by tag
-function filterCardsByTag(tag) {
-    cards.forEach((card) => {
-        card.style.display = card.dataset.tags.includes(tag.toLowerCase()) ? "block" : "none";
+        topicButtonsContainer.appendChild(button);
     });
 }
 
-// Function to reset card visibility
-function resetCards() {
-    cards.forEach((card) => {
-        card.style.display = "block";
-    });
+// Display tags and questions for the selected topic
+function displayTagsAndQuestions(questionsData) {
+    tagsContainer.style.display = "block"; // Show the tags section
+    const uniqueTags = [...new Set(questionsData.flatMap((q) => q.tags))];
+    generateTagButtons(uniqueTags);
+    renderCards(questionsData);
 }
 
-// Function to dynamically generate tag buttons
+// Generate tag buttons dynamically
 function generateTagButtons(tags) {
     tagButtonsContainer.innerHTML = ""; // Clear existing buttons
 
-    const uniqueTags = [...new Set(tags.flat().map(tag => tag.toLowerCase()))]; // Flatten and get unique tags
-    uniqueTags.forEach(tag => {
+    tags.forEach((tag) => {
         const button = document.createElement("button");
         button.classList.add("tag-button");
         button.textContent = tag;
-        button.addEventListener("click", () => filterCardsByTag(tag)); // Attach filtering logic
+
+        button.addEventListener("click", () => filterByTag(tag));
         tagButtonsContainer.appendChild(button);
     });
 
@@ -44,23 +51,40 @@ function generateTagButtons(tags) {
     const resetButton = document.createElement("button");
     resetButton.classList.add("reset-button");
     resetButton.textContent = "RESET";
-    resetButton.addEventListener("click", resetCards);
+
+    resetButton.addEventListener("click", resetCards); // Call resetCards
     tagButtonsContainer.appendChild(resetButton);
 }
 
-// Function to render cards
+// Add a random card button
+function addRandomCardButton(questionsData) {
+    let randomButton = document.querySelector(".random-button");
+    if (!randomButton) {
+        randomButton = document.createElement("button");
+        randomButton.classList.add("random-button");
+        randomButton.textContent = "RANDOM CARD";
+
+        randomButton.addEventListener("click", () => showRandomCard(questionsData));
+        tagsContainer.appendChild(randomButton);
+    }
+}
+
+// Show a random card
+function showRandomCard(questionsData) {
+    const randomIndex = Math.floor(Math.random() * questionsData.length);
+    const randomQuestion = questionsData[randomIndex];
+    renderCards([randomQuestion]); // Render only the random question
+}
+
+// Render cards dynamically
 function renderCards(data) {
-    const cardGrid = document.getElementById("card-grid");
     cardGrid.innerHTML = ""; // Clear existing cards
 
-    const allTags = []; // Collect all tags for dynamic button generation
-
     data.forEach(({ question, answer, tags }) => {
-        allTags.push(tags); // Collect tags for the current card
-
         const card = document.createElement("div");
         card.classList.add("card");
-        card.setAttribute("data-tags", tags.map(tag => tag.toLowerCase()).join(","));
+        card.setAttribute("data-tags", tags.join(",").toLowerCase());
+
         card.innerHTML = `
       <div class="card-inner flip-inverted-diagonal">
         <div class="card-front">
@@ -68,25 +92,43 @@ function renderCards(data) {
         </div>
         <div class="card-back back-flip-inverted-diagonal">
           <p class="answer">${answer}</p>
-          <div class="tags">${tags.map(tag => `<span class="tag">${tag}</span>`).join("")}</div>
+          <div class="tags">${tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
         </div>
       </div>
     `;
+
         cardGrid.appendChild(card);
     });
+}
 
-    // Update questions and cards references after rendering
-    questions = document.querySelectorAll(".question");
-    cards = document.querySelectorAll(".card");
+// Filter cards by tags
+function filterByTag(tag) {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+        const tags = card.getAttribute("data-tags").split(",");
+        card.style.display = tags.includes(tag.toLowerCase()) ? "block" : "none";
+    });
+}
 
-    // Generate tag buttons dynamically
-    generateTagButtons(allTags);
+// Reset all cards to show all questions for the selected topic
+function resetCards() {
+    if (!selectedTopic) return; // No topic selected, nothing to reset
+
+    const topicData = questionsData.find((item) => item.topic === selectedTopic);
+    if (topicData) {
+        renderCards(topicData.questions); // Re-render all questions for the selected topic
+    }
+
+    // Ensure all tag buttons are reset visually
+    const tagButtons = document.querySelectorAll(".tag-button");
+    tagButtons.forEach((button) => button.classList.remove("active")); // Optional: add visual indicator
 }
 
 // Fetch JSON data and initialize
-fetch("topics/questions.json") // Use your actual path
+fetch("questions.json")
     .then((response) => response.json())
     .then((data) => {
-        renderCards(data);
+        questionsData = data; // Store data globally
+        generateTopicButtons(data);
     })
     .catch((error) => console.error("Error loading questions:", error));

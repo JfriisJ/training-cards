@@ -108,7 +108,6 @@ header {
 }
 
 .card-inner {
-    width: relative;
     width: 100%;
     height: 100%;
     transition: transform 1s;
@@ -200,4 +199,52 @@ footer a:active {
     right: 2rem;
     bottom: 1.5rem;
     font-size: 3rem;
+}
+
+.topics-description {
+    padding-right: 1rem;
+    align-self: center;
+    color: #424874;
+}
+
+.search-topics {
+    display: flex;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.topic-button {
+    all: unset;
+    border: 2px solid #424874;
+    border-radius: 35px;
+    background: transparent;
+    color: #424874;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    margin-right: 0.5rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.topic-button:hover {
+    background: #424874;
+    color: #F4EEFF;
+}
+
+.random-button {
+    all: unset;
+    border: 2px solid #424874;
+    border-radius: 35px;
+    background: transparent;
+    color: #424874;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.random-button:hover {
+    background: #424874;
+    color: #F4EEFF;
 }
