@@ -8,18 +8,18 @@
         "tags": ["SAFe"]
       },
       {
-        "question": "How does SAFe handle scaling challenges?",
+        "question": "How does SAFe address scaling challenges?",
         "answer": "SAFe uses four levels: Team, Program, Large Solution, and Portfolio. Key practices include Agile Release Trains (ARTs) for coordination and Program Increment (PI) Planning for alignment.",
         "tags": ["SAFe"]
       },
       {
-        "question": "What is the difference between SAFe and LeSS?",
+        "question": "What are the main differences between SAFe and LeSS?",
         "answer": "SAFe has a structured, hierarchical approach with multiple levels and roles. LeSS focuses on simplicity, decentralization, and uses one Product Backlog and one Product Owner.",
         "tags": ["Comparison"]
       },
       {
-        "question": "How does SAFe keep teams aligned?",
-        "answer": "SAFe uses Agile Release Trains (ARTs), Program Increment (PI) Planning, and synchronized planning to keep all teams aligned.",
+        "question": "How does SAFe ensure team alignment?",
+        "answer": "SAFe ensures alignment through Agile Release Trains (ARTs), Program Increment (PI) Planning, and synchronized planning across all teams.",
         "tags": ["SAFe"]
       },
       {
@@ -29,17 +29,17 @@
       },
       {
         "question": "What are the challenges of adopting SAFe?",
-        "answer": "Challenges include complexity, resistance to change, and high upfront costs. These can be solved with strong leadership, training, and starting with a pilot Agile Release Train (ART).",
+        "answer": "Challenges include complexity, resistance to change, and high upfront costs. These can be addressed with strong leadership, training, and starting with a pilot Agile Release Train (ART).",
         "tags": ["SAFe"]
       },
       {
-        "question": "How does LeSS keep teams autonomous?",
-        "answer": "LeSS keeps teams autonomous by allowing them to self-organize during Sprint Planning 2 while aligning on shared goals in Sprint Planning 1. Teams communicate directly and avoid hierarchy.",
+        "question": "How does LeSS maintain team autonomy?",
+        "answer": "LeSS maintains autonomy by allowing teams to self-organize during Sprint Planning 2 while aligning on shared goals in Sprint Planning 1. Teams communicate directly and avoid hierarchy.",
         "tags": ["LeSS"]
       },
       {
-        "question": "What are the success factors for adopting SAFe?",
-        "answer": "Success factors include leadership support, training, clear roles, Program Increment (PI) Planning, and starting with a pilot Agile Release Train (ART).",
+        "question": "What are the key success factors for adopting SAFe?",
+        "answer": "Key success factors include leadership support, training, clear roles, effective Program Increment (PI) Planning, and starting with a pilot Agile Release Train (ART).",
         "tags": ["SAFe"]
       },
       {
@@ -51,96 +51,6 @@
         "question": "What is the main purpose of LeSS?",
         "answer": "LeSS, or Large-Scale Scrum, is used to scale Scrum for large organizations while keeping it simple and decentralized.",
         "tags": ["LeSS"]
-      },
-      {
-        "question": "What are Agile Release Trains (ARTs)?",
-        "answer": "ARTs are teams of teams (50-125 people) that work together on a shared goal using SAFe practices.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "What is a Program Increment (PI) in SAFe?",
-        "answer": "A Program Increment is a planning cycle of 8-12 weeks where teams align, plan, and deliver work together.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "How does LeSS handle product ownership?",
-        "answer": "LeSS uses one Product Owner to manage a single Product Backlog across all teams.",
-        "tags": ["LeSS"]
-      },
-      {
-        "question": "What is the role of a Product Owner in SAFe?",
-        "answer": "In SAFe, each team has its own Product Owner who manages the Team Backlog and reports to Product Managers.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "What is the role of a Release Train Engineer (RTE)?",
-        "answer": "The RTE coordinates Agile Release Trains (ARTs), ensuring teams align and deliver on time.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "What are the four levels of SAFe?",
-        "answer": "The four levels of SAFe are Team, Program, Large Solution, and Portfolio.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "What is the main difference between SAFe and Scrum?",
-        "answer": "SAFe is for large organizations and adds structure and hierarchy, while Scrum is for small teams and focuses on simplicity.",
-        "tags": ["Comparison"]
-      },
-      {
-        "question": "What is Scrum of Scrums?",
-        "answer": "Scrum of Scrums is a coordination meeting for representatives from multiple Scrum teams to align and resolve dependencies.",
-        "tags": ["LeSS"]
-      },
-      {
-        "question": "What is the goal of PI Planning?",
-        "answer": "The goal of PI Planning is to align all teams on objectives, dependencies, and priorities for the next Program Increment.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "How does LeSS encourage learning and adaptation?",
-        "answer": "LeSS encourages frequent retrospectives, direct communication, and experimentation to improve processes continuously.",
-        "tags": ["LeSS"]
-      },
-      {
-        "question": "What is a Product Backlog?",
-        "answer": "A Product Backlog is a prioritized list of work items that the team will deliver, managed by the Product Owner.",
-        "tags": ["Scrum", "LeSS"]
-      },
-      {
-        "question": "What is the focus of the Portfolio level in SAFe?",
-        "answer": "The Portfolio level focuses on aligning organizational strategy with execution through Epics and value streams.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "How does SAFe support continuous improvement?",
-        "answer": "SAFe supports continuous improvement through Inspect and Adapt events, regular retrospectives, and feedback loops.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "What is the difference between Sprint Planning 1 and Sprint Planning 2 in LeSS?",
-        "answer": "Sprint Planning 1 is for cross-team alignment on goals, while Sprint Planning 2 is for team-specific task planning.",
-        "tags": ["LeSS"]
-      },
-      {
-        "question": "What are the main benefits of SAFe?",
-        "answer": "The main benefits of SAFe include improved alignment, higher productivity, better quality, and predictable delivery at scale.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "What is a Community of Practice (CoP)?",
-        "answer": "A Community of Practice is a group of people across teams sharing knowledge and best practices.",
-        "tags": ["LeSS", "SAFe"]
-      },
-      {
-        "question": "What are the main goals of SAFe?",
-        "answer": "The main goals of SAFe are to scale Agile practices, align teams with business strategy, and deliver value faster.",
-        "tags": ["SAFe"]
-      },
-      {
-        "question": "What is the focus of LeSS Huge?",
-        "answer": "LeSS Huge is for scaling Scrum to more than 8 teams, introducing Requirement Areas with Area Product Owners.",
-        "tags": ["LeSS"]
       }
     ]
   },
@@ -149,78 +59,153 @@
     "questions": [
       {
         "question": "What is distributed software development (DSD)?",
-        "answer": "DSD involves software teams working in separate locations within the same country.",
+        "answer": "DSD involves software development by teams located in different geographical areas, either within the same country or across countries.",
         "tags": ["DSD"]
       },
       {
-        "question": "What is global software development (GSD)?",
-        "answer": "GSD involves software teams distributed across different countries, often to reduce costs or access global talent.",
-        "tags": ["GSD"]
+        "question": "Why is distributed development significant in modern software engineering?",
+        "answer": "It allows access to a global talent pool, reduces costs, and supports specialized development needs, but poses challenges like communication gaps and coordination issues.",
+        "tags": ["significance", "challenges"]
       },
       {
-        "question": "What are the main challenges of GSD?",
-        "answer": "Challenges include communication gaps, cultural differences, time zone issues, and coordination difficulties.",
-        "tags": ["GSD", "Challenges"]
+        "question": "How does cultural distance affect distributed software development?",
+        "answer": "Cultural distance can cause misunderstandings and conflicts in team interactions, impacting productivity and collaboration.",
+        "tags": ["cultural distance"]
       },
       {
-        "question": "How can stress be reduced in GSD teams?",
-        "answer": "Stress can be reduced by improving communication, promoting trust, reducing work pressure, and providing clear roles.",
-        "tags": ["Stress"]
+        "question": "What are the differences between co-located and distributed Agile practices?",
+        "answer": "Co-located practices emphasize face-to-face communication, while distributed practices rely on digital tools and structured communication methods to manage geographical separation.",
+        "tags": ["comparison", "Agile"]
       },
       {
-        "question": "What factors affect motivation in GSD teams?",
-        "answer": "Motivation can be influenced by recognition, feedback, challenging work, work-life balance, and cultural sensitivity.",
-        "tags": ["Motivation"]
+        "question": "How does the 'Follow the Sun' model enhance productivity in distributed teams?",
+        "answer": "The model utilizes time zone differences to maintain continuous development cycles, reducing project timelines.",
+        "tags": ["productivity"]
       },
       {
-        "question": "How does agile fit into distributed development?",
-        "answer": "Agile practices like daily scrums, sprint planning, and retrospectives are adapted with tools like video conferencing and frequent visits.",
-        "tags": ["Agile", "DSD"]
+        "question": "What challenges arise in communication within distributed teams?",
+        "answer": "Challenges include language barriers, time zone differences, and the lack of non-verbal communication cues.",
+        "tags": ["communication"]
       },
       {
-        "question": "What is a distributed Scrum of Scrums?",
-        "answer": "It is a coordination meeting where Scrum Masters from different teams synchronize progress and resolve cross-team dependencies.",
+        "question": "Why are daily Scrums critical in distributed Agile development?",
+        "answer": "Daily Scrums promote transparency, help identify impediments early, and encourage continuous communication across distributed teams.",
         "tags": ["Scrum"]
       },
       {
-        "question": "What is the role of frequent visits in GSD?",
-        "answer": "Frequent visits build trust, improve collaboration, and provide opportunities for direct communication and planning.",
-        "tags": ["GSD"]
+        "question": "How can organizations mitigate risks in global software engineering?",
+        "answer": "Organizations can mitigate risks by improving communication, using robust collaboration tools, and fostering trust through frequent visits and shared goals.",
+        "tags": ["risk mitigation"]
       },
       {
-        "question": "What tools support distributed agile development?",
-        "answer": "Tools like Jira, Wiki, video conferencing, and messaging apps support communication, task tracking, and collaboration.",
-        "tags": ["Tools", "Agile"]
+        "question": "What are the benefits of frequent visits in distributed teams?",
+        "answer": "Frequent visits enhance trust, improve understanding of project goals, and foster stronger interpersonal relationships.",
+        "tags": ["trust", "visits"]
       },
       {
-        "question": "What are the success factors in distributed software projects?",
-        "answer": "Success depends on clear goals, strong communication, cultural understanding, and proper knowledge management.",
-        "tags": ["GSD"]
+        "question": "How do synchronized sprints improve distributed Agile performance?",
+        "answer": "Synchronized sprints ensure all teams follow the same timeline, which enhances coordination and reduces integration issues.",
+        "tags": ["sprints"]
       },
       {
-        "question": "How can teams overcome cultural differences in GSD?",
-        "answer": "By building personal relationships, encouraging open communication, and providing cultural sensitivity training.",
-        "tags": ["Culture"]
+        "question": "What is the primary goal of distributed development methodologies?",
+        "answer": "To facilitate efficient software development across geographically dispersed teams while addressing challenges like communication, coordination, and cultural differences.",
+        "tags": ["goal"]
       },
       {
-        "question": "What is the purpose of distributed daily scrums?",
-        "answer": "To ensure team alignment by sharing updates, identifying obstacles, and planning tasks, often through video or chat tools.",
+        "question": "Why is trust important in distributed software development?",
+        "answer": "Trust fosters collaboration, reduces conflicts, and enhances team cohesion, which are critical for the success of distributed projects.",
+        "tags": ["trust"]
+      },
+      {
+        "question": "How do temporal and geographic distances impact distributed development?",
+        "answer": "Temporal distances affect scheduling and synchronous collaboration, while geographic distances complicate physical interaction and increase reliance on digital tools.",
+        "tags": ["distances"]
+      },
+      {
+        "question": "What are common tools used for collaboration in distributed teams?",
+        "answer": "Tools like Jira for task management, Slack for communication, Zoom for meetings, and Git for version control are commonly used to facilitate collaboration.",
+        "tags": ["tools"]
+      },
+      {
+        "question": "How does Distributed Scrum differ from traditional Scrum?",
+        "answer": "Distributed Scrum adapts practices like daily stand-ups, sprint planning, and reviews to virtual environments using communication tools and often involves synchronized sprints across time zones.",
         "tags": ["Scrum"]
       },
       {
-        "question": "How does communication impact GSD projects?",
-        "answer": "Effective communication reduces misunderstandings, builds trust, and ensures better coordination across teams.",
-        "tags": ["GSD"]
+        "question": "What are the advantages of using Agile methodologies in distributed development?",
+        "answer": "Agile methodologies enhance adaptability, promote continuous feedback, and encourage collaboration even in distributed setups, improving project outcomes.",
+        "tags": ["Agile"]
       },
       {
-        "question": "What is the significance of knowledge management in GSD?",
-        "answer": "Proper knowledge management avoids 'reinventing the wheel' and ensures that teams can access and use shared information efficiently.",
-        "tags": ["Knowledge"]
+        "question": "Why is knowledge sharing critical in distributed software engineering?",
+        "answer": "Effective knowledge sharing prevents rework, reduces misunderstandings, and ensures all team members have access to crucial information.",
+        "tags": ["knowledge sharing"]
       },
       {
-        "question": "How can productivity be improved in GSD teams?",
-        "answer": "Productivity improves with better knowledge transfer, trust, role clarity, and minimizing time zone challenges.",
-        "tags": ["GSD", "Productivity"]
+        "question": "What is the role of a Scrum Master in a distributed team?",
+        "answer": "A Scrum Master facilitates communication, removes impediments, and ensures Agile practices are effectively implemented across distributed locations.",
+        "tags": ["Scrum Master"]
+      },
+      {
+        "question": "How do distributed teams manage work-life balance challenges?",
+        "answer": "Teams manage work-life balance by synchronizing work hours, respecting time zones, and implementing flexible schedules.",
+        "tags": ["work-life balance"]
+      },
+      {
+        "question": "What is a 'proxy customer' in distributed Agile development?",
+        "answer": "A proxy customer acts as an intermediary between the development team and the actual customer, making decisions and providing feedback when direct interaction is challenging.",
+        "tags": ["proxy customer"]
+      },
+      {
+        "question": "How do you ensure quality in distributed development?",
+        "answer": "Quality is ensured through practices like continuous integration, automated testing, regular code reviews, and adherence to a clear definition of 'done.'",
+        "tags": ["quality"]
+      },
+      {
+        "question": "What is the 'OneTeam' model in distributed Scrum?",
+        "answer": "The OneTeam model integrates distributed teams into a unified structure, emphasizing synchronized goals, shared responsibilities, and a common product backlog.",
+        "tags": ["OneTeam"]
+      },
+      {
+        "question": "What are the key metrics to evaluate distributed team performance?",
+        "answer": "Key metrics include velocity, defect rates, code quality, and team satisfaction, adapted to the distributed context.",
+        "tags": ["metrics"]
+      },
+      {
+        "question": "How does cultural diversity affect distributed software development?",
+        "answer": "Cultural diversity can bring innovation but also challenges like miscommunication, differing work styles, and conflicts, which need to be managed effectively.",
+        "tags": ["culture"]
+      },
+      {
+        "question": "What is the role of frequent visits in distributed development?",
+        "answer": "Frequent visits help build trust, improve collaboration, and provide opportunities for face-to-face interaction, which strengthens team dynamics.",
+        "tags": ["visits"]
+      },
+      {
+        "question": "What are the main challenges in distributed software development?",
+        "answer": "Challenges include communication gaps, cultural differences, coordination issues, and maintaining quality across distributed teams.",
+        "tags": ["challenges"]
+      },
+      {
+        "question": "How can organizations overcome communication barriers in distributed teams?",
+        "answer": "Using multiple communication tools, establishing clear protocols, and promoting regular interactions help overcome communication barriers.",
+        "tags": ["communication"]
+      },
+      {
+        "question": "Why is alignment of time zones critical in distributed teams?",
+        "answer": "Alignment ensures overlapping work hours, enabling real-time collaboration and quicker issue resolution.",
+        "tags": ["time zones"]
+      },
+      {
+        "question": "How can distributed teams handle knowledge loss due to turnover?",
+        "answer": "Effective documentation, knowledge sharing sessions, and mentoring programs can mitigate knowledge loss from turnover.",
+        "tags": ["knowledge loss"]
+      },
+      {
+        "question": "How does the use of sprint retrospectives benefit distributed teams?",
+        "answer": "Sprint retrospectives enable teams to reflect on processes, identify improvement areas, and adapt practices to distributed challenges.",
+        "tags": ["retrospectives"]
       }
     ]
   }

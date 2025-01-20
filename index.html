@@ -7,10 +7,13 @@
     padding: 0;
   }
 
-  body {
+  html, body {
     font-family: 'Poppins', sans-serif;
+    height: 100%; /* Allow the body to grow with the content */
     background: #424874;
+    min-height: 100%; /* Ensure the body takes at least the full viewport height */
   }
+
 
   /* HEADER */
   header {
@@ -80,14 +83,16 @@
 
   /* CARD GRID */
   .card-grid {
-    min-height: 100vh;
+    min-height: 100%; /* Allow the grid to fill available space */
+    height: auto; /* Adjust height dynamically */
     display: grid;
-    grid-template-columns: repeat(auto-fill, 22.5rem);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     justify-content: center;
     padding: 2rem;
     background-color: #F4EEFF;
   }
+
 
   .card {
     cursor: pointer;
@@ -115,7 +120,7 @@
     place-items: center;
     background-color: #DCD6F7;
     color: #424874;
-    padding: 1rem;
+    padding: 1.5rem; /* Increase padding for better spacing */
     border-radius: 6px;
   }
 
@@ -199,6 +204,7 @@
     background: #424874;
     color: #F4EEFF;
   }
+
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -206,7 +212,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/0d953e133b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/styles.css">
+<!--  <link rel="stylesheet" href="/styles.css">-->
   <title>Flip-cards for Interview Prep</title>
 </head>
 <body>

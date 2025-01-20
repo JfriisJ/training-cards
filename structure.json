@@ -1,0 +1,42 @@
+[
+  {
+    "topic": "topic name",
+    "questions":
+    [
+      {
+        "question": "what is .....",
+        "answer": "Answer....",
+        "tags": ["topic"]
+      },
+      {
+        "question": "what is .....",
+        "answer": "Answer....",
+        "tags": ["topic"]
+      },   {
+        "question": "what is .....",
+        "answer": "Answer....",
+        "tags": ["topic"]
+      }
+    ]
+  },
+  {
+    "topic": "topic name",
+    "questions":
+    [
+      {
+        "question": "what is .....",
+        "answer": "Answer....",
+        "tags": ["topic"]
+      },
+      {
+        "question": "what is .....",
+        "answer": "Answer....",
+        "tags": ["topic"]
+      },   {
+      "question": "what is .....",
+      "answer": "Answer....",
+      "tags": ["topic"]
+    }
+    ]
+  }
+]
