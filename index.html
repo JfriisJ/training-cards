@@ -9,18 +9,18 @@
 
   html, body {
     font-family: 'Poppins', sans-serif;
-    height: 100%; /* Allow the body to grow with the content */
+    height: 100%;
     background: #424874;
-    min-height: 100%; /* Ensure the body takes at least the full viewport height */
+    min-height: 100%;
+    overflow-x: hidden;
   }
-
 
   /* HEADER */
   header {
     background-color: #DCD6F7;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between elements */
+    justify-content: space-between;
     padding: 1rem 2rem;
   }
 
@@ -83,23 +83,26 @@
 
   /* CARD GRID */
   .card-grid {
-    min-height: 100%; /* Allow the grid to fill available space */
-    height: auto; /* Adjust height dynamically */
+    overflow: visible;
+    min-height: 100%;
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     justify-content: center;
     padding: 2rem;
     background-color: #F4EEFF;
   }
 
-
   .card {
-    cursor: pointer;
     perspective: 1000px;
+    overflow: visible;
+    width: 300px;
+    height: 400px;
   }
 
   .card-inner {
+    overflow: visible;
     width: 100%;
     height: 100%;
     transition: transform 1s;
@@ -120,7 +123,7 @@
     place-items: center;
     background-color: #DCD6F7;
     color: #424874;
-    padding: 1.5rem; /* Increase padding for better spacing */
+    padding: 1.5rem;
     border-radius: 6px;
   }
 
@@ -204,6 +207,40 @@
     background: #424874;
     color: #F4EEFF;
   }
+  /* TOPIC BAR */
+  .topic-bar {
+    background-color: #424874;
+    padding: 1rem 2rem;
+    color: #F4EEFF;
+  }
+
+  .topic-bar .search-topics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topic-bar .topics-description {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .topic-bar .topic-button {
+    all: unset;
+    border: 2px solid #F4EEFF;
+    border-radius: 35px;
+    background: transparent;
+    color: #F4EEFF;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .topic-bar .topic-button:hover {
+    background: #F4EEFF;
+    color: #424874;
+  }
 
 </style>
 <!DOCTYPE html>
@@ -212,18 +249,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/0d953e133b.js" crossorigin="anonymous"></script>
-<!--  <link rel="stylesheet" href="/styles.css">-->
   <title>Flip-cards for Interview Prep</title>
 </head>
 <body>
-<!-- HEADER -->
-<header>
+
+<!-- TOPIC BAR -->
+<div class="topic-bar">
   <div class="search-topics">
     <p class="topics-description">Choose a topic:</p>
     <div class="topic-buttons" id="topic-buttons">
       <!-- Topic buttons will be dynamically generated here -->
     </div>
   </div>
+</div>
+<!-- HEADER -->
+<header>
   <div class="search-tags" style="display: none;" id="tags-container">
     <p class="tags-description">Now select a tag:</p>
     <div class="tag-buttons" id="tag-buttons">
@@ -234,8 +274,6 @@
     <button class="reset-button" id="reset-button">RESET</button>
   </div>
 </header>
-
-
 
 <!-- MAIN CARD GRID -->
 <main class="card-grid" id="card-grid">
