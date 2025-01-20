@@ -148,54 +148,79 @@
     "topic": "Methodologies for Distributed Development",
     "questions": [
       {
-        "question": "What are the key challenges in Global Software Engineering (GSE)?",
-        "answer": "Key challenges include communication gaps, cultural differences, time zone issues, knowledge transfer, and maintaining team cohesion. Projects may fail due to insufficient quality, high staff turnover, or ineffective collaboration.",
-        "tags": ["GSE"]
+        "question": "What is distributed software development (DSD)?",
+        "answer": "DSD involves software teams working in separate locations within the same country.",
+        "tags": ["DSD"]
       },
       {
-        "question": "What are some practices to improve collaboration in distributed Scrum teams?",
-        "answer": "Practices include distributed daily Scrums, Sprint Planning with teleconferencing, using tools like Jira and Wikis, frequent visits to build trust, and employing rotating team members between sites to enhance communication.",
-        "tags": ["Scrum"]
+        "question": "What is global software development (GSD)?",
+        "answer": "GSD involves software teams distributed across different countries, often to reduce costs or access global talent.",
+        "tags": ["GSD"]
       },
       {
-        "question": "How does stress affect productivity in distributed software teams?",
-        "answer": "Stress from high work pressure, unclear roles, or cultural misunderstandings can reduce productivity and morale. Effective communication, workload management, and trust-building can mitigate these issues.",
+        "question": "What are the main challenges of GSD?",
+        "answer": "Challenges include communication gaps, cultural differences, time zone issues, and coordination difficulties.",
+        "tags": ["GSD", "Challenges"]
+      },
+      {
+        "question": "How can stress be reduced in GSD teams?",
+        "answer": "Stress can be reduced by improving communication, promoting trust, reducing work pressure, and providing clear roles.",
         "tags": ["Stress"]
       },
       {
-        "question": "What are the benefits of using Agile in distributed development?",
-        "answer": "Agile enhances adaptability, team collaboration, and customer satisfaction. When tailored to distributed settings, Agile practices improve communication and transparency through regular meetings and iterative development.",
-        "tags": ["Agile"]
-      },
-      {
-        "question": "What tools are commonly used in distributed Agile projects?",
-        "answer": "Tools such as Jira, Wikis, video conferencing (e.g., Zoom, Skype), and collaborative platforms for task tracking and communication are essential to ensure alignment across distributed teams.",
-        "tags": ["Tools"]
-      },
-      {
-        "question": "What factors impact motivation in distributed teams?",
-        "answer": "Factors include recognition, challenging tasks, cultural understanding, work-life balance, and clear communication. Providing feedback and fostering a sense of belonging also play key roles.",
+        "question": "What factors affect motivation in GSD teams?",
+        "answer": "Motivation can be influenced by recognition, feedback, challenging work, work-life balance, and cultural sensitivity.",
         "tags": ["Motivation"]
       },
       {
-        "question": "How can companies reduce stress in global software teams?",
-        "answer": "Companies can reduce stress by improving communication, managing workloads effectively, providing role clarity, and fostering a supportive team environment.",
-        "tags": ["Stress"]
+        "question": "How does agile fit into distributed development?",
+        "answer": "Agile practices like daily scrums, sprint planning, and retrospectives are adapted with tools like video conferencing and frequent visits.",
+        "tags": ["Agile", "DSD"]
       },
       {
-        "question": "What are the main drivers for adopting Global Software Engineering (GSE)?",
-        "answer": "Drivers include cost reduction, access to a diverse talent pool, scalability, and proximity to global markets.",
-        "tags": ["GSE"]
-      },
-      {
-        "question": "What is the importance of cultural awareness in distributed Agile teams?",
-        "answer": "Cultural awareness helps prevent misunderstandings, builds trust, and enhances collaboration by respecting diverse working styles and communication preferences.",
-        "tags": ["Cultural Awareness"]
-      },
-      {
-        "question": "What are the key components of the Xebia Fully Distributed Scrum model?",
-        "answer": "The model includes distributed Scrum teams, frequent communication through daily standups, synchronized Sprint Planning, and trust-building through face-to-face visits. Teams ensure quality with high test coverage and pair programming.",
+        "question": "What is a distributed Scrum of Scrums?",
+        "answer": "It is a coordination meeting where Scrum Masters from different teams synchronize progress and resolve cross-team dependencies.",
         "tags": ["Scrum"]
+      },
+      {
+        "question": "What is the role of frequent visits in GSD?",
+        "answer": "Frequent visits build trust, improve collaboration, and provide opportunities for direct communication and planning.",
+        "tags": ["GSD"]
+      },
+      {
+        "question": "What tools support distributed agile development?",
+        "answer": "Tools like Jira, Wiki, video conferencing, and messaging apps support communication, task tracking, and collaboration.",
+        "tags": ["Tools", "Agile"]
+      },
+      {
+        "question": "What are the success factors in distributed software projects?",
+        "answer": "Success depends on clear goals, strong communication, cultural understanding, and proper knowledge management.",
+        "tags": ["GSD"]
+      },
+      {
+        "question": "How can teams overcome cultural differences in GSD?",
+        "answer": "By building personal relationships, encouraging open communication, and providing cultural sensitivity training.",
+        "tags": ["Culture"]
+      },
+      {
+        "question": "What is the purpose of distributed daily scrums?",
+        "answer": "To ensure team alignment by sharing updates, identifying obstacles, and planning tasks, often through video or chat tools.",
+        "tags": ["Scrum"]
+      },
+      {
+        "question": "How does communication impact GSD projects?",
+        "answer": "Effective communication reduces misunderstandings, builds trust, and ensures better coordination across teams.",
+        "tags": ["GSD"]
+      },
+      {
+        "question": "What is the significance of knowledge management in GSD?",
+        "answer": "Proper knowledge management avoids 'reinventing the wheel' and ensures that teams can access and use shared information efficiently.",
+        "tags": ["Knowledge"]
+      },
+      {
+        "question": "How can productivity be improved in GSD teams?",
+        "answer": "Productivity improves with better knowledge transfer, trust, role clarity, and minimizing time zone challenges.",
+        "tags": ["GSD", "Productivity"]
       }
     ]
   }
