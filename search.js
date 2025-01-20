@@ -49,24 +49,41 @@ function generateTagButtons(tags) {
 }
 
 // Add a random card button
-function addRandomCardButton(questionsData) {
+function addRandomCardButton(topicQuestions) {
     let randomButton = document.querySelector(".random-button");
     if (!randomButton) {
         randomButton = document.createElement("button");
         randomButton.classList.add("random-button");
         randomButton.textContent = "RANDOM CARD";
 
-        randomButton.addEventListener("click", () => showRandomCard(questionsData));
+        // Ensure it only picks from the selected topic's questions
+        randomButton.addEventListener("click", showRandomCard);
         tagsContainer.appendChild(randomButton);
     }
 }
 
+
 // Show a random card
-function showRandomCard(questionsData) {
-    const randomIndex = Math.floor(Math.random() * questionsData.length);
-    const randomQuestion = questionsData[randomIndex];
+// Show a random card from the selected topic
+function showRandomCard() {
+    if (!selectedTopic) {
+        alert("Please select a topic first.");
+        return;
+    }
+
+    // Find the questions for the selected topic
+    const topicData = questionsData.find((item) => item.topic === selectedTopic);
+    if (!topicData || topicData.questions.length === 0) {
+        alert("No questions available for the selected topic.");
+        return;
+    }
+
+    // Pick a random question from the selected topic's questions
+    const randomIndex = Math.floor(Math.random() * topicData.questions.length);
+    const randomQuestion = topicData.questions[randomIndex];
     renderCards([randomQuestion]); // Render only the random question
 }
+
 
 // Render cards dynamically
 function renderCards(data) {
