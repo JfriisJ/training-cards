@@ -173,15 +173,12 @@
     }
 
     .up-button {
-        position: fixed;
+        position: absolute;
         right: 2rem;
-        bottom: 2rem;
-        font-size: 2rem;
-        color: #DCD6F7;
-        cursor: pointer;
-        display: none; /* Hidden initially */
-        z-index: 1000;
+        bottom: 1.5rem;
+        font-size: 3rem;
     }
+
 
     .up-button:hover {
         color: white;
@@ -319,6 +316,19 @@
         background: #F4EEFF;
         color: #424874;
     }
+
+    @media (max-width: 768px) {
+        .up-button {
+            right: 1rem;
+            bottom: 1rem;
+            font-size: 3rem; /* Bigger for thumb-friendly interaction */
+        }
+
+        .card-grid {
+            grid-template-columns: 1fr; /* Single column layout */
+        }
+    }
+
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -367,9 +377,7 @@
 
 <!-- FOOTER -->
 <footer>
-    <a aria-label="To the top of the page" id="up-button" class="up-button" href="#">
-        <i class="fas fa-arrow-circle-up"></i>
-    </a>
+    <a href="#" class="up-button" aria-label="To the top of the page"><i class="fas fa-arrow-circle-up"></i></a>
 </footer>
 
 
