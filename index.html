@@ -178,11 +178,15 @@
         bottom: 2rem;
         font-size: 2rem;
         color: #DCD6F7;
+        cursor: pointer;
+        display: none; /* Hidden initially */
+        z-index: 1000;
     }
 
     .up-button:hover {
         color: white;
     }
+
 
     .topics-description {
         padding-right: 1rem;
@@ -384,8 +388,12 @@
 
 <!-- FOOTER -->
 <footer>
-    <a aria-label="To the top of the page" class="up-button" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+    <a aria-label="To the top of the page" id="up-button" class="up-button" href="#">
+        <i class="fas fa-arrow-circle-up"></i>
+    </a>
 </footer>
+
+
 
 <!-- SCRIPTS -->
 <script src="search.js"></script>

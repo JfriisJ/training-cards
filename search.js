@@ -3,12 +3,14 @@ const topicMenuButton = document.getElementById("menu-button");
 const topicDropdown = document.getElementById("dropdown");
 const tagMenuButton = document.getElementById("tag-menu-button");
 const tagDropdown = document.getElementById("tag-dropdown");
-const tagButtonsContainer = document.getElementById("tag-buttons");
 const tagsContainer = document.getElementById("tags-container");
 const cardGrid = document.getElementById("card-grid");
 const resetButton = document.getElementById("reset-button");
 const randomButton = document.getElementById("random-button");
 const topicHeading = document.getElementById("topic-heading");
+const upButton = document.getElementById("up-button");
+// Initially hide the button
+// document.getElementById("up-button").style.display = "none";
 
 let selectedTopic = null;
 let questionsData = [];
@@ -156,3 +158,23 @@ fetch("/questions.json")
         updateTopicHeading(); // Set default topic heading
     })
     .catch((error) => console.error("Error loading questions:", error));
+
+
+
+// Show the up button when scrolling down
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        upButton.style.display = "block"; // Show button after scrolling 200px
+    } else {
+        upButton.style.display = "none"; // Hide button when near the top
+    }
+});
+
+// Scroll to the top when the up button is clicked
+upButton.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Smooth scroll effect
+    });
+});
