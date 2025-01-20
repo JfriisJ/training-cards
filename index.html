@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0d953e133b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Flip-cards for Interview Prep</title>
+</head>
+<body>
+<!-- HEADER -->
+<header>
+  <form class="search-form">
+    <input type="text" name="searchbar" id="searchbar" placeholder="Type in a keyword...">
+    <i class="fas fa-search"></i>
+  </form>
+  <div class="search-tags">
+    <p class="tags-description">Or choose from one of these tags to filter questions:</p>
+    <div class="tag-buttons" id="tag-buttons">
+      <!-- Buttons will be dynamically generated here -->
+    </div>
+  </div>
+</header>
+
+<!-- MAIN CARD GRID -->
+<main class="card-grid" id="card-grid">
+  <!-- Cards will be dynamically loaded here via JavaScript -->
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="social-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-codepen"></i></a>
+    <a href="#"><i class="far fa-envelope"></i></a>
+  </div>
+  <a href="#" class="up-button" aria-label="To the top of the page"><i class="fas fa-arrow-circle-up"></i></a>
+  <p class="createdby">Created by <a href="#">Fluffy Kas</a></p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="search.js"></script>
+</body>
+</html>
