@@ -84,7 +84,7 @@ function renderCards(data) {
 }
 
 // Fetch JSON data and initialize
-fetch("questions.json") // Use your actual path
+fetch("topics/questions.json") // Use your actual path
     .then((response) => response.json())
     .then((data) => {
         renderCards(data);
