@@ -3,8 +3,7 @@ name: Publish Docker Image
 on:
   push:
     branches:
-      - main
-
+      - master
 jobs:
   question-cards: # This is the name of the job
     runs-on: ubuntu-latest
