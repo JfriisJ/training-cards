@@ -1,7 +1,10 @@
+// Select existing DOM elements
 const topicButtonsContainer = document.getElementById("topic-buttons");
 const tagButtonsContainer = document.getElementById("tag-buttons");
 const tagsContainer = document.getElementById("tags-container");
 const cardGrid = document.getElementById("card-grid");
+const resetButton = document.getElementById("reset-button");
+const randomButton = document.getElementById("random-button"); // Direct reference to the button
 let selectedTopic = null;
 let questionsData = [];
 
@@ -18,7 +21,6 @@ function generateTopicButtons(data) {
             const selectedData = data.find((item) => item.topic === topic);
             if (selectedData) {
                 displayTagsAndQuestions(selectedData.questions);
-                addRandomCardButton(selectedData.questions); // Add random card functionality
             }
         });
 
@@ -48,22 +50,6 @@ function generateTagButtons(tags) {
     });
 }
 
-// Add a random card button
-function addRandomCardButton(topicQuestions) {
-    let randomButton = document.querySelector(".random-button");
-    if (!randomButton) {
-        randomButton = document.createElement("button");
-        randomButton.classList.add("random-button");
-        randomButton.textContent = "RANDOM CARD";
-
-        // Ensure it only picks from the selected topic's questions
-        randomButton.addEventListener("click", showRandomCard);
-        tagsContainer.appendChild(randomButton);
-    }
-}
-
-
-// Show a random card
 // Show a random card from the selected topic
 function showRandomCard() {
     if (!selectedTopic) {
@@ -83,7 +69,6 @@ function showRandomCard() {
     const randomQuestion = topicData.questions[randomIndex];
     renderCards([randomQuestion]); // Render only the random question
 }
-
 
 // Render cards dynamically
 function renderCards(data) {
@@ -119,7 +104,6 @@ function filterByTag(tag) {
     });
 }
 
-
 // Reset all cards to show all questions for the selected topic
 function resetCards() {
     if (!selectedTopic) return; // No topic selected, nothing to reset
@@ -128,15 +112,13 @@ function resetCards() {
     if (topicData) {
         renderCards(topicData.questions); // Re-render all questions for the selected topic
     }
-
-    // Ensure all tag buttons are reset visually
-    const tagButtons = document.querySelectorAll(".tag-button");
-    tagButtons.forEach((button) => button.classList.remove("active")); // Optional: add visual indicator
 }
 
 // Attach the reset functionality to the reset button in the header
-document.getElementById("reset-button").addEventListener("click", resetCards);
+resetButton.addEventListener("click", resetCards);
 
+// Attach the random card functionality to the random button
+randomButton.addEventListener("click", showRandomCard);
 
 // Fetch JSON data and initialize
 fetch("/questions.json")

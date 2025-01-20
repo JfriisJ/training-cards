@@ -19,11 +19,11 @@
   header {
     background-color: #DCD6F7;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 1rem 2rem;
+    position: relative;
   }
-
 
   .tags-description {
     color: #424874;
@@ -32,7 +32,9 @@
 
   .reset-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
   }
 
   .reset-button {
@@ -48,6 +50,23 @@
   }
 
   .reset-button:hover {
+    background: #424874;
+    color: #F4EEFF;
+  }
+
+  .random-button {
+    all: unset;
+    border: 2px solid #424874;
+    border-radius: 35px;
+    background: transparent;
+    color: #424874;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .random-button:hover {
     background: #424874;
     color: #F4EEFF;
   }
@@ -126,25 +145,6 @@
     transform: rotate3d(1, -1, 0, 180deg);
   }
 
-  /* RANDOM BUTTON */
-  .random-button {
-    all: unset;
-    border: 2px solid #424874;
-    border-radius: 35px;
-    background: transparent;
-    color: #424874;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 0.5rem 1.5rem;
-    margin-left: 1rem;
-    transition: background 0.3s, color 0.3s;
-  }
-
-  .random-button:hover {
-    background: #424874;
-    color: #F4EEFF;
-  }
-
   /* FOOTER */
   footer {
     background: #424874;
@@ -179,8 +179,6 @@
     color: #424874;
   }
 
-
-
   .topic-button {
     all: unset;
     border: 2px solid #424874;
@@ -198,14 +196,12 @@
     background: #424874;
     color: #F4EEFF;
   }
+
   /* TOPIC BAR */
   .topic-bar {
     background-color: #424874;
     padding: 1rem 2rem;
     color: #F4EEFF;
-  }
-
-  .topic-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -260,6 +256,7 @@
   </div>
   <div class="reset-container">
     <button class="reset-button" id="reset-button">RESET</button>
+    <button class="random-button" id="random-button">RANDOM CARD</button>
   </div>
 </header>
 
