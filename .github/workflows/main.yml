@@ -15,5 +15,5 @@ jobs:
       - name: Build and push
         uses: macbre/push-to-ghcr@master
         with:
-          image_name: 'jfriisj/question-cards'
+          image_name: 'question-cards'
           github_token: ${{ secrets.TOKEN }}
