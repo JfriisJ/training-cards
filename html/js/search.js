@@ -59,24 +59,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // Generate the topic menu dynamically
     function generateTopicMenu(data) {
         topicDropdown.innerHTML = "";
-        data.forEach(({ topic }) => {
+        data.forEach((topic) => {
             const li = document.createElement("li");
             li.textContent = topic;
             li.classList.add("dropdown-item");
-            li.addEventListener("click", () => selectTopic(topic, data));
+            li.addEventListener("click", () => selectTopic(topic));
             topicDropdown.appendChild(li);
         });
     }
 
-    // Handle topic selection
-    function selectTopic(topic, data) {
+    // Handle topic selection and fetch corresponding JSON file
+    function selectTopic(topic) {
         selectedTopic = topic;
         updateTopicHeading();
-        const selectedData = data.find((item) => item.topic === topic);
-        if (selectedData) {
-            displayTagsAndQuestions(selectedData.questions);
-            topicDropdown.style.display = "none";
-        }
+        fetch(`/topics/${topic.toLowerCase().replace(/\s+/g, "_")}.json`)
+            .then((response) => response.json())
+            .then((data) => {
+                questionsData = data.questions;
+                displayTagsAndQuestions(questionsData);
+                topicDropdown.style.display = "none";
+            })
+            .catch((error) => console.error(`Error loading topic file: ${topic}`, error));
     }
 
     // Generate tag dropdown dynamically
@@ -107,14 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        const topicData = questionsData.find((item) => item.topic === selectedTopic);
-        if (!topicData || topicData.questions.length === 0) {
+        if (!questionsData || questionsData.length === 0) {
             alert("No questions available for the selected topic.");
             return;
         }
 
-        const randomIndex = Math.floor(Math.random() * topicData.questions.length);
-        renderCards([topicData.questions[randomIndex]]);
+        const randomIndex = Math.floor(Math.random() * questionsData.length);
+        renderCards([questionsData[randomIndex]]);
     }
 
     // Render cards dynamically
@@ -155,17 +157,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // Reset cards to show all questions for the selected topic
     function resetCards() {
         if (!selectedTopic) return;
-        const topicData = questionsData.find((item) => item.topic === selectedTopic);
-        if (topicData) renderCards(topicData.questions);
+        renderCards(questionsData);
     }
 
-    // Fetch JSON data and initialize the app
-    fetch("/questions.json")
-        .then((response) => response.json())
-        .then((data) => {
-            questionsData = data;
-            generateTopicMenu(data);
-            updateTopicHeading();
+    // Fetch available topics and initialize the menu
+    fetch("/topics/questions.json")
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("Failed to load questions.json");
+            }
+            return response.json();
         })
-        .catch((error) => console.error("Error loading questions:", error));
-});
+        .then((data) => {
+            if (data.topics && Array.isArray(data.topics)) {
+                generateTopicMenu(data.topics);
+            } else {
+                console.error("Invalid questions.json structure");
+            }
+        })
+        .catch((error) => console.error("Error loading topics:", error));
+    });

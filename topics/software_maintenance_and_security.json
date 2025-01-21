@@ -1,0 +1,184 @@
+{
+  "topic": "Software Maintenance and Security",
+  "questions": [
+    {
+      "question": "What is GenProg?",
+      "answer": "GenProg is a genetic programming-based approach for automated software repair. It uses mutation and crossover operations to evolve program variants that fix identified bugs, guided by a fitness function that prioritizes passing test cases.",
+      "tags": [
+        "Fault Localization",
+        "Software Repair"
+      ]
+    },
+    {
+      "question": "Why is symbolic execution used in SemFix?",
+      "answer": "Symbolic execution is used in SemFix to generate constraints that represent the expected behavior of a buggy statement. This enables the synthesis of a repair expression that satisfies these constraints.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "How does semantic repair differ from search-based repair?",
+      "answer": "Semantic repair uses program synthesis and symbolic execution to generate constraints and repairs, while search-based repair relies on generating and validating program variants using mutation and crossover strategies.",
+      "tags": [
+        "Agile Methodologies",
+        "Semantic Repair"
+      ]
+    },
+    {
+      "question": "What are the limitations of search-based program repair?",
+      "answer": "Search-based program repair may overfit to test cases, potentially removing functionality or failing to generalize repairs. It also has a limited search space for mutations and is computationally expensive.",
+      "tags": [
+        "Limitations",
+        "Search-Based Repair"
+      ]
+    },
+    {
+      "question": "Why is program repair critical in software engineering?",
+      "answer": "Program repair addresses bugs efficiently, reduces maintenance costs, and enhances software reliability, especially for critical systems where bugs can lead to significant failures or security risks.",
+      "tags": [
+        "Challenges",
+        "Software Repair"
+      ]
+    },
+    {
+      "question": "What is automatic program repair (APR)?",
+      "answer": "APR is a method to fix software bugs automatically using techniques like fault localization, mutation, and validation against test suites.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "Why is fault localization important in program repair?",
+      "answer": "Fault localization identifies the buggy parts of code, reducing the search space for applying fixes and improving repair efficiency.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "What is the difference between search-based and semantic repair?",
+      "answer": "Search-based repair generates and tests program variants, while semantic repair uses constraints and synthesis to generate correct code.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "How does GenProg use genetic programming?",
+      "answer": "GenProg applies mutation and crossover operations to generate program variants, guided by a fitness function to prioritize fixes.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "What is SemFix?",
+      "answer": "SemFix is a repair approach that uses symbolic execution and synthesis to generate patches for buggy programs.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "What are common limitations of search-based repair?",
+      "answer": "Search-based repair may overfit test cases, fail to preserve functionality, and have a limited exploration space.",
+      "tags": [
+        "Limitations"
+      ]
+    },
+    {
+      "question": "Why is symbolic execution used in semantic repair?",
+      "answer": "It creates constraints that define the expected behavior of a program, enabling accurate repair synthesis.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "What is the main goal of a fitness function in GenProg?",
+      "answer": "The fitness function evaluates program variants to select the best candidates for further mutation and crossover.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "How do repairs in GenProg differ from those in SemFix?",
+      "answer": "GenProg relies on evolving program variants through genetic programming, while SemFix synthesizes repairs directly using constraints.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "What is the advantage of semantic repair over search-based repair?",
+      "answer": "Semantic repair can create new code that doesn't exist in the program, whereas search-based repair relies on existing code.",
+      "tags": [
+        "Semantic Repair"
+      ]
+    },
+    {
+      "question": "What is a repair constraint in SemFix?",
+      "answer": "A repair constraint defines the conditions a program must satisfy to pass all test cases after a fix is applied.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "Why does GenProg use mutation and crossover?",
+      "answer": "These operations mimic biological evolution to explore potential program variants and improve repair quality.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "What is the purpose of fault localization in APR?",
+      "answer": "It narrows down the parts of code that are likely buggy, saving time during repair generation.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "How does SPR differ from GenProg?",
+      "answer": "SPR uses pre-defined repair templates and synthesizes conditions, while GenProg relies on genetic programming.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "What are the main limitations of semantic repair?",
+      "answer": "Semantic repair struggles with path explosion, symbolic indexing in arrays, and memory aliasing.",
+      "tags": [
+        "Limitations"
+      ]
+    },
+    {
+      "question": "What is a test suite in APR?",
+      "answer": "A test suite is a set of tests used to validate program behavior and ensure that repaired programs meet the required functionality.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "What is the role of symbolic execution in finding bugs?",
+      "answer": "Symbolic execution explores program paths to identify potential faults and generate repair constraints.",
+      "tags": [
+        "Fault Localization"
+      ]
+    },
+    {
+      "question": "Why is overfitting a problem in search-based repair?",
+      "answer": "Overfitting creates repairs that pass the test suite but may break untested functionality.",
+      "tags": [
+        "Limitations"
+      ]
+    },
+    {
+      "question": "What is the difference between SPR and semantic repair?",
+      "answer": "SPR uses templates and condition synthesis, while semantic repair focuses on constraint-based synthesis.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "How do GenProg and SemFix approach APR differently?",
+      "answer": "GenProg evolves program variants through genetic programming, while SemFix directly synthesizes repairs from constraints.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    }
+  ]
+}

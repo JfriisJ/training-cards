@@ -1,0 +1,169 @@
+{
+  "topic": "Methodologies For Startup",
+  "questions": [
+    {
+      "question": "What is Lean Startup?",
+      "answer": "Lean Startup is a methodology introduced by Eric Ries that focuses on building products iteratively and delivering them to the market for early feedback. It aims to validate customer needs and reduce uncertainty through continuous learning.",
+      "tags": [
+        "Lean Startup"
+      ]
+    },
+    {
+      "question": "Why is Design Thinking important in software development?",
+      "answer": "Design Thinking is crucial because it emphasizes user-centered design, fostering empathy and collaboration among teams. It helps address complex problems by iterating through understanding, ideation, prototyping, and testing phases.",
+      "tags": [
+        "Design Thinking"
+      ]
+    },
+    {
+      "question": "How does Lean Startup compare to traditional methodologies?",
+      "answer": "Unlike traditional methodologies that focus on planning and execution based on predefined requirements, Lean Startup emphasizes continuous feedback, iterative development, and validated learning to address high uncertainty in innovation.",
+      "tags": [
+        "Methodologies",
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "What are the seven principles of Lean Software Development?",
+      "answer": "The principles are: (1) Optimize the whole, (2) Eliminate waste, (3) Build quality in, (4) Learn constantly, (5) Deliver fast, (6) Engage everyone, and (7) Keep getting better.",
+      "tags": [
+        "Lean Startup"
+      ]
+    },
+    {
+      "question": "How is Design Thinking integrated into agile methodologies?",
+      "answer": "Design Thinking integrates with Agile by enhancing the problem-definition and ideation phases. It focuses on understanding user needs upfront and continues to iterate solutions alongside Agile\u00e2\u20ac\u2122s rapid delivery cycles.",
+      "tags": [
+        "Agile",
+        "Integration"
+      ]
+    },
+    {
+      "question": "What are the challenges of applying Design Thinking in software projects?",
+      "answer": "Challenges include time pressures, lack of participant engagement, preconceived solutions from stakeholders, and difficulty in balancing creativity with technical constraints.",
+      "tags": [
+        "Challenges"
+      ]
+    },
+    {
+      "question": "Why should large companies adopt Lean Startup principles?",
+      "answer": "Large companies can benefit from Lean Startup to foster innovation, enter new markets with reduced risk, and adapt quickly to market feedback, which traditional approaches often lack.",
+      "tags": [
+        "Innovation",
+        "Large Companies"
+      ]
+    },
+    {
+      "question": "What distinguishes Lean Startup from Design Thinking?",
+      "answer": "Lean Startup focuses on validated learning through build-measure-learn cycles, while Design Thinking emphasizes empathy and creative problem-solving. Both aim for innovation but use different approaches.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "What is a startup?",
+      "answer": "A startup is a human institution designed to create new products or services under conditions of extreme uncertainty.",
+      "tags": [
+        "Startup"
+      ]
+    },
+    {
+      "question": "Why is customer feedback important in Lean Startup?",
+      "answer": "Customer feedback helps validate whether a product meets market needs and allows for adjustments before scaling.",
+      "tags": [
+        "Customer Feedback"
+      ]
+    },
+    {
+      "question": "How does Lean Startup use Minimum Viable Product (MVP)?",
+      "answer": "Lean Startup uses MVPs to quickly test a product idea with minimal effort and gather user feedback for further development.",
+      "tags": [
+        "MVP"
+      ]
+    },
+    {
+      "question": "What is Design Thinking?",
+      "answer": "Design Thinking is a problem-solving approach that focuses on understanding users, generating ideas, prototyping, and testing solutions.",
+      "tags": [
+        "Design Thinking"
+      ]
+    },
+    {
+      "question": "What are the steps of Design Thinking?",
+      "answer": "The steps are: Empathize, Define, Ideate, Prototype, and Test.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "How does Lean Startup differ from Agile?",
+      "answer": "Lean Startup focuses on validating business ideas with fast iterations, while Agile focuses on delivering high-quality software through iterative development.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "Why is eliminating waste important in Lean Software Development?",
+      "answer": "Eliminating waste ensures resources are used only for activities that add value to the customer or improve the product.",
+      "tags": [
+        "Lean Startup"
+      ]
+    },
+    {
+      "question": "What is the role of prototypes in Design Thinking?",
+      "answer": "Prototypes help teams test ideas quickly and gather user feedback to refine solutions.",
+      "tags": [
+        "Design Thinking"
+      ]
+    },
+    {
+      "question": "What is the difference between Lean Startup and Waterfall?",
+      "answer": "Lean Startup focuses on iterative development and feedback, while Waterfall follows a sequential, rigid process from requirements to delivery.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "Why is collaboration important in Design Thinking?",
+      "answer": "Collaboration brings diverse perspectives to solve problems creatively and ensures all stakeholders are aligned on the solution.",
+      "tags": [
+        "Collaboration Tools"
+      ]
+    },
+    {
+      "question": "How do Lean Startup and Design Thinking complement each other?",
+      "answer": "Lean Startup focuses on validating business ideas, while Design Thinking provides tools to empathize with users and ideate solutions.",
+      "tags": [
+        "Integration"
+      ]
+    },
+    {
+      "question": "What is Build-Measure-Learn in Lean Startup?",
+      "answer": "It is a cycle of creating a product, measuring user responses, and learning from the data to improve the product.",
+      "tags": [
+        "Lean Startup"
+      ]
+    },
+    {
+      "question": "What is empathy in Design Thinking?",
+      "answer": "Empathy means understanding the users' needs, feelings, and challenges to design better solutions.",
+      "tags": [
+        "Design Thinking"
+      ]
+    },
+    {
+      "question": "How is Lean Software Development different from Agile?",
+      "answer": "Lean Software Development focuses on eliminating waste and maximizing value, while Agile emphasizes adaptability and iterative delivery.",
+      "tags": [
+        "Agile Methodologies"
+      ]
+    },
+    {
+      "question": "Why is testing early important in both Lean Startup and Design Thinking?",
+      "answer": "Early testing identifies problems quickly, reduces risks, and ensures the product meets user needs.",
+      "tags": [
+        "Testing"
+      ]
+    }
+  ]
+}
