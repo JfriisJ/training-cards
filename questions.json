@@ -3,6 +3,56 @@
     "topic": "Methodologies for Large-Scale Development",
     "questions": [
       {
+          "question": "What are the core principles of LeSS?",
+          "answer": "The core principles of LeSS include customer focus, empirical process control, whole-product focus, transparency, and lean thinking.",
+          "tags": ["LeSS", "principles"]
+      },
+      {
+          "question": "What are the main differences between LeSS and LeSS Huge?",
+          "answer": "LeSS is designed for 2-8 teams working on a single product, while LeSS Huge scales for more than 8 teams by introducing Requirement Areas to manage complexity.",
+          "tags": ["LeSS", "LeSS Huge", "comparison"]
+      },
+      {
+          "question": "How does LeSS promote customer focus in large-scale development?",
+          "answer": "LeSS promotes customer focus by using a single Product Owner and centralized backlog, ensuring all teams prioritize delivering value to the customer.",
+          "tags": ["LeSS", "customer focus"]
+      },
+      {
+          "question": "What is the role of the Product Owner in LeSS, and how does it differ from Scrum?",
+          "answer": "In LeSS, the Product Owner oversees a single product backlog shared by all teams, focusing on large-scale prioritization and coordination, unlike Scrum where the scope is typically smaller.",
+          "tags": ["LeSS", "Product Owner"]
+      },
+      {
+          "question": "What challenges do teams face when adopting LeSS, and how can they overcome them?",
+          "answer": "Challenges include resistance to descaling, inter-team communication issues, and aligning leadership. Overcoming them requires training, fostering collaboration, and leadership support.",
+          "tags": ["LeSS", "challenges"]
+      },
+      {
+          "question": "What are Requirement Areas in LeSS Huge, and why are they important?",
+          "answer": "Requirement Areas in LeSS Huge divide the product into functional areas, each managed by an Area Product Owner, to simplify coordination for large-scale development.",
+          "tags": ["LeSS Huge", "Requirement Areas"]
+      },
+      {
+          "question": "How does LeSS ensure simplicity while scaling Scrum?",
+          "answer": "LeSS ensures simplicity by minimizing roles, maintaining a single product backlog, and using synchronized sprint cycles across teams.",
+          "tags": ["LeSS", "simplicity"]
+      },
+      {
+          "question": "What are the advantages and disadvantages of adopting LeSS?",
+          "answer": "Advantages include maintaining agility, customer focus, and simplicity. Disadvantages involve initial training needs, potential resistance to descaling, and challenges in cross-team communication.",
+          "tags": ["LeSS", "advantages", "disadvantages"]
+      },
+      {
+          "question": "How do retrospectives differ in LeSS compared to regular Scrum?",
+          "answer": "LeSS includes team-level retrospectives and overall retrospectives for all teams, focusing on improving cross-team collaboration and alignment.",
+          "tags": ["LeSS", "retrospectives"]
+      },
+      {
+          "question": "What role does leadership play in successful LeSS adoption?",
+          "answer": "Leadership supports LeSS adoption by promoting a culture of learning, encouraging simplicity, and removing organizational impediments to scaling Scrum.",
+          "tags": ["LeSS", "leadership"]
+      },
+      {
         "question": "What is the Scaled Agile Framework (SAFe)?",
         "answer": "SAFe is a framework introduced in 2011 by Dean Leffingwell to support large organizations in scaling agile methods. It is based on Agile development, lean principles, and system thinking, suitable for handling complex projects with multiple teams.",
         "tags": ["SAFe"]
@@ -171,6 +221,31 @@
         "question": "Why is feedback important in Scrum?",
         "answer": "Feedback helps teams in Scrum improve their work, fix issues quickly, and align better with customer needs.",
         "tags": ["Scrum"]
+      },
+          {
+        "question": "How does SAFe align business strategy with execution?",
+        "answer": "SAFe uses portfolio management to connect strategy with execution, ensuring that investments align with organizational goals through value streams.",
+        "tags": ["SAFe", "strategy alignment"]
+      },
+      {
+          "question": "What is the role of Communities of Practice (CoPs) in SAFe?",
+          "answer": "CoPs in SAFe provide forums for knowledge sharing and skill development among practitioners across teams.",
+          "tags": ["SAFe", "CoPs"]
+      },
+      {
+          "question": "What are the economic principles behind SAFe?",
+          "answer": "SAFe’s economic principles include delivering early and often, optimizing economic outcomes, and decentralizing decision-making to reduce delays.",
+          "tags": ["SAFe", "economics"]
+      },
+      {
+          "question": "How does LeSS approach scaling with minimal management roles?",
+          "answer": "LeSS reduces management layers by focusing on team autonomy and collaboration while ensuring alignment through a shared Product Owner and backlog.",
+          "tags": ["LeSS", "management"]
+      },
+      {
+          "question": "How can organizations combine LeSS and SAFe?",
+          "answer": "Organizations can combine SAFe’s strategic alignment with LeSS’s simplicity at the team level to balance top-down and bottom-up approaches.",
+          "tags": ["LeSS", "SAFe", "combination"]
       }
     ]
   },
@@ -326,6 +401,26 @@
         "question": "How does the use of sprint retrospectives benefit distributed teams?",
         "answer": "Sprint retrospectives enable teams to reflect on processes, identify improvement areas, and adapt practices to distributed challenges.",
         "tags": ["retrospectives"]
+      },
+      {
+        "question": "What frameworks are most suitable for managing distributed software projects?",
+        "answer": "Frameworks like SAFe, LeSS, and Disciplined Agile can provide structure, while tools like Jira, Trello, Slack, and Zoom enhance collaboration.",
+        "tags": ["frameworks", "tools"]
+      },
+      {
+          "question": "How does distributed development impact project budgets?",
+          "answer": "Distributed development can reduce costs through global talent acquisition and reduced physical office space needs, but it may increase spending on tools, infrastructure, and coordination.",
+          "tags": ["economic impact", "budgets"]
+      },
+      {
+          "question": "What are the primary security concerns in distributed software development?",
+          "answer": "Risks include data breaches, insecure communication channels, and unauthorized access. Solutions involve VPNs, end-to-end encryption, and strict access control policies.",
+          "tags": ["security", "distributed development"]
+      },
+      {
+          "question": "How does the absence of physical presence affect team dynamics in distributed settings?",
+          "answer": "It can reduce bonding and trust. Virtual team-building activities, frequent video calls, and recognition programs can mitigate this.",
+          "tags": ["team dynamics", "trust"]
       }
     ]
   },
