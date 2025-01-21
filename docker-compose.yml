@@ -1,7 +1,7 @@
 services:
   question-cards:
     container_name: question-cards
-    image: ghcr.io/jfriisj/question-cards:latest
+    image: ghcr.io/jfriisj/training-cards:latest
     ports:
       - "86:80"
     volumes:
