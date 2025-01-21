@@ -165,9 +165,16 @@
     },
     {
       "question": "What is distributed software development (DSD)?",
-      "answer": "DSD involves software development by teams located in different geographical areas, either within the same country or across countries.",
+      "answer": "DSD involves software development by teams located in different geographical areas, within the same country.",
       "tags": [
         "DSD"
+      ]
+    },
+        {
+      "question": "What is Global software development (GSD)?",
+      "answer": "GSD involves software development by teams located in different geographical areas in different countries.",
+      "tags": [
+        "GSD"
       ]
     },
     {
