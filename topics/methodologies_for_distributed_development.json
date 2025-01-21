@@ -3,7 +3,7 @@
   "questions": [
     {
       "question": "How has global software engineering evolved over the past decade?",
-      "answer": "It has shifted from cost-based decisions to process improvements and enhanced collaboration.",
+      "answer": "It has shifted from cost-based decisions to process improvements, quality awareness, and enhanced collaboration.",
       "tags": [
         "trends",
         "evolution",
@@ -12,7 +12,7 @@
     },
     {
       "question": "What are the emerging trends in global software development?",
-      "answer": "Trends include near-shoring, real-time collaboration tools, and focus on quality and agility.",
+      "answer": "Trends include near-shoring, real-time collaboration tools, a focus on quality, and adopting specialized processes to improve efficiency.",
       "tags": [
         "trends",
         "global development",
@@ -21,7 +21,7 @@
     },
     {
       "question": "What are the best practices for managing cross-cultural and geographically dispersed teams?",
-      "answer": "Providing cultural training, fostering mutual respect, and using ambassadors to bridge gaps.",
+      "answer": "Providing cultural training, fostering mutual respect, using ambassadors to bridge gaps, and arranging frequent visits to build trust and collaboration.",
       "tags": [
         "management",
         "GSE",
@@ -30,7 +30,7 @@
     },
     {
       "question": "How can transparent supplier agreements enhance success in distributed software projects?",
-      "answer": "Clear agreements ensure expectations are aligned and conflicts are minimized.",
+      "answer": "Clear agreements ensure expectations are aligned and conflicts are minimized, improving coordination and project outcomes.",
       "tags": [
         "supplier management",
         "GSE",
@@ -39,7 +39,7 @@
     },
     {
       "question": "How can daily Scrums be effectively conducted in distributed teams?",
-      "answer": "Using video conferencing, pre-meeting email updates, and standardized question formats.",
+      "answer": "Using video conferencing, pre-meeting email updates, and standardized question formats, along with synchronous communication when possible.",
       "tags": [
         "Scrum",
         "daily meetings",
@@ -48,7 +48,7 @@
     },
     {
       "question": "What modifications to sprint planning are necessary for distributed Agile teams?",
-      "answer": "Conducting shorter, more focused meetings and ensuring lead developers manage time zone challenges.",
+      "answer": "Conducting shorter, more focused meetings, clarifying issues beforehand, and ensuring lead developers manage time zone challenges effectively.",
       "tags": [
         "sprint planning",
         "Scrum",
@@ -57,7 +57,7 @@
     },
     {
       "question": "How can frequent visits between sites improve trust and collaboration in distributed teams?",
-      "answer": "Visits foster personal connections, build trust, and enhance collaborative understanding.",
+      "answer": "Visits foster personal connections, build trust, and enhance collaborative understanding, especially when scheduled early and maintained periodically.",
       "tags": [
         "trust",
         "collaboration",
@@ -66,7 +66,7 @@
     },
     {
       "question": "What tools and technologies are most effective for supporting communication in distributed Agile projects?",
-      "answer": "Video conferencing, instant messaging, desktop sharing, and collaborative Wikis.",
+      "answer": "Video conferencing, instant messaging, desktop sharing, collaborative Wikis, Jira, and Team Foundation Server.",
       "tags": [
         "Agile",
         "communication",
@@ -75,7 +75,7 @@
     },
     {
       "question": "What are the main communication challenges in fully distributed Scrum teams?",
-      "answer": "Language barriers, time zone differences, and cultural misunderstandings are key challenges.",
+      "answer": "Language barriers, time zone differences, lack of non-verbal communication cues, and cultural misunderstandings.",
       "tags": [
         "communication",
         "Scrum",
@@ -84,7 +84,7 @@
     },
     {
       "question": "How can distributed Scrum teams achieve or exceed the velocity of co-located teams?",
-      "answer": "By leveraging strong communication tools, synchronized daily Scrums, and XP practices.",
+      "answer": "By leveraging strong communication tools, synchronized daily Scrums, adopting XP practices, and maintaining overlapping work hours.",
       "tags": [
         "velocity",
         "Scrum",
@@ -92,26 +92,8 @@
       ]
     },
     {
-      "question": "What role do daily Scrum meetings play in overcoming barriers in distributed teams?",
-      "answer": "They facilitate coordination, improve transparency, and align team efforts despite geographic dispersion.",
-      "tags": [
-        "coordination",
-        "Scrum",
-        "daily meetings"
-      ]
-    },
-    {
-      "question": "What are the key strategies for achieving hyperproductive states in distributed Scrum teams?",
-      "answer": "Implementing XP practices, prioritizing backlog items, and fostering team ownership are critical.",
-      "tags": [
-        "Scrum",
-        "distributed teams",
-        "hyperproductivity"
-      ]
-    },
-    {
       "question": "What are the primary causes of stress in distributed software development teams?",
-      "answer": "Factors include work overload, ambiguity in roles, and lack of work-life balance due to remote settings.",
+      "answer": "Factors include work overload, ambiguity in roles, lack of work-life balance, and challenges in interpersonal relationships.",
       "tags": [
         "GSD",
         "stress",
@@ -120,7 +102,7 @@
     },
     {
       "question": "How does remote work affect the work-life balance of developers, and how can this lead to burnout?",
-      "answer": "Remote work blurs boundaries between personal and professional life, leading to stress and burnout.",
+      "answer": "Remote work blurs boundaries between personal and professional life, leading to stress, fatigue, and potential burnout.",
       "tags": [
         "burnout",
         "remote work",
@@ -129,7 +111,7 @@
     },
     {
       "question": "What are the key theories used to understand motivation in software engineering teams?",
-      "answer": "Maslow's Hierarchy of Needs, Herzberg's Two-Factor Theory, and Vroom's Expectancy Theory.",
+      "answer": "Maslow's Hierarchy of Needs, Herzberg's Two-Factor Theory, and Vroom's Expectancy Theory are commonly referenced.",
       "tags": [
         "theories",
         "motivation",
@@ -138,7 +120,7 @@
     },
     {
       "question": "How does motivation impact the quality and quantity of software development outputs?",
-      "answer": "Higher motivation leads to better quality software, improved productivity, and greater team commitment.",
+      "answer": "Higher motivation leads to better quality software, improved productivity, greater team satisfaction, and stronger commitment.",
       "tags": [
         "productivity",
         "motivation",
@@ -147,7 +129,7 @@
     },
     {
       "question": "What measures can organizations take to reduce stress in distributed teams?",
-      "answer": "Organizations can provide flexible schedules, clear role definitions, and stress management training.",
+      "answer": "Organizations can provide flexible schedules, clear role definitions, stress management training, and enhance collaboration through multiple communication modes.",
       "tags": [
         "management",
         "stress",
@@ -156,263 +138,11 @@
     },
     {
       "question": "How can leadership foster motivation in a global software engineering environment?",
-      "answer": "By recognizing achievements, providing growth opportunities, and ensuring alignment with team goals.",
+      "answer": "By recognizing achievements, providing growth opportunities, ensuring alignment with team goals, and fostering a positive work atmosphere.",
       "tags": [
         "leadership",
         "motivation",
         "GSD"
-      ]
-    },
-    {
-      "question": "What is distributed software development (DSD)?",
-      "answer": "DSD involves software development by teams located in different geographical areas, within the same country.",
-      "tags": [
-        "DSD"
-      ]
-    },
-        {
-      "question": "What is Global software development (GSD)?",
-      "answer": "GSD involves software development by teams located in different geographical areas in different countries.",
-      "tags": [
-        "GSD"
-      ]
-    },
-    {
-      "question": "Why is distributed development significant in modern software engineering?",
-      "answer": "It allows access to a global talent pool, reduces costs, and supports specialized development needs, but poses challenges like communication gaps and coordination issues.",
-      "tags": [
-        "Challenges",
-        "significance"
-      ]
-    },
-    {
-      "question": "How does cultural distance affect distributed software development?",
-      "answer": "Cultural distance can cause misunderstandings and conflicts in team interactions, impacting productivity and collaboration.",
-      "tags": [
-        "cultural distance"
-      ]
-    },
-    {
-      "question": "What are the differences between co-located and distributed Agile practices?",
-      "answer": "Co-located practices emphasize face-to-face communication, while distributed practices rely on digital tools and structured communication methods to manage geographical separation.",
-      "tags": [
-        "Agile",
-        "Agile Methodologies"
-      ]
-    },
-    {
-      "question": "How does the 'Follow the Sun' model enhance productivity in distributed teams?",
-      "answer": "The model utilizes time zone differences to maintain continuous development cycles, reducing project timelines.",
-      "tags": [
-        "productivity"
-      ]
-    },
-    {
-      "question": "What challenges arise in communication within distributed teams?",
-      "answer": "Challenges include language barriers, time zone differences, and the lack of non-verbal communication cues.",
-      "tags": [
-        "communication"
-      ]
-    },
-    {
-      "question": "Why are daily Scrums critical in distributed Agile development?",
-      "answer": "Daily Scrums promote transparency, help identify impediments early, and encourage continuous communication across distributed teams.",
-      "tags": [
-        "Scrum"
-      ]
-    },
-    {
-      "question": "How can organizations mitigate risks in global software engineering?",
-      "answer": "Organizations can mitigate risks by improving communication, using robust collaboration tools, and fostering trust through frequent visits and shared goals.",
-      "tags": [
-        "risk mitigation"
-      ]
-    },
-    {
-      "question": "What are the benefits of frequent visits in distributed teams?",
-      "answer": "Frequent visits enhance trust, improve understanding of project goals, and foster stronger interpersonal relationships.",
-      "tags": [
-        "visits",
-        "trust"
-      ]
-    },
-    {
-      "question": "How do synchronized sprints improve distributed Agile performance?",
-      "answer": "Synchronized sprints ensure all teams follow the same timeline, which enhances coordination and reduces integration issues.",
-      "tags": [
-        "sprints"
-      ]
-    },
-    {
-      "question": "What is the primary goal of distributed development methodologies?",
-      "answer": "To facilitate efficient software development across geographically dispersed teams while addressing challenges like communication, coordination, and cultural differences.",
-      "tags": [
-        "goal"
-      ]
-    },
-    {
-      "question": "Why is trust important in distributed software development?",
-      "answer": "Trust fosters collaboration, reduces conflicts, and enhances team cohesion, which are critical for the success of distributed projects.",
-      "tags": [
-        "trust"
-      ]
-    },
-    {
-      "question": "How do temporal and geographic distances impact distributed development?",
-      "answer": "Temporal distances affect scheduling and synchronous collaboration, while geographic distances complicate physical interaction and increase reliance on digital tools.",
-      "tags": [
-        "distances"
-      ]
-    },
-    {
-      "question": "What are common tools used for collaboration in distributed teams?",
-      "answer": "Tools like Jira for task management, Slack for communication, Zoom for meetings, and Git for version control are commonly used to facilitate collaboration.",
-      "tags": [
-        "Collaboration Tools"
-      ]
-    },
-    {
-      "question": "How does Distributed Scrum differ from traditional Scrum?",
-      "answer": "Distributed Scrum adapts practices like daily stand-ups, sprint planning, and reviews to virtual environments using communication tools and often involves synchronized sprints across time zones.",
-      "tags": [
-        "Scrum"
-      ]
-    },
-    {
-      "question": "What are the advantages of using Agile methodologies in distributed development?",
-      "answer": "Agile methodologies enhance adaptability, promote continuous feedback, and encourage collaboration even in distributed setups, improving project outcomes.",
-      "tags": [
-        "Agile"
-      ]
-    },
-    {
-      "question": "Why is knowledge sharing critical in distributed software engineering?",
-      "answer": "Effective knowledge sharing prevents rework, reduces misunderstandings, and ensures all team members have access to crucial information.",
-      "tags": [
-        "knowledge sharing"
-      ]
-    },
-    {
-      "question": "What is the role of a Scrum Master in a distributed team?",
-      "answer": "A Scrum Master facilitates communication, removes impediments, and ensures Agile practices are effectively implemented across distributed locations.",
-      "tags": [
-        "Scrum"
-      ]
-    },
-    {
-      "question": "How do distributed teams manage work-life balance challenges?",
-      "answer": "Teams manage work-life balance by synchronizing work hours, respecting time zones, and implementing flexible schedules.",
-      "tags": [
-        "work-life balance"
-      ]
-    },
-    {
-      "question": "What is a 'proxy customer' in distributed Agile development?",
-      "answer": "A proxy customer acts as an intermediary between the development team and the actual customer, making decisions and providing feedback when direct interaction is challenging.",
-      "tags": [
-        "proxy customer"
-      ]
-    },
-    {
-      "question": "How do you ensure quality in distributed development?",
-      "answer": "Quality is ensured through practices like continuous integration, automated testing, regular code reviews, and adherence to a clear definition of 'done.'",
-      "tags": [
-        "quality"
-      ]
-    },
-    {
-      "question": "What is the 'OneTeam' model in distributed Scrum?",
-      "answer": "The OneTeam model integrates distributed teams into a unified structure, emphasizing synchronized goals, shared responsibilities, and a common product backlog.",
-      "tags": [
-        "Scrum"
-      ]
-    },
-    {
-      "question": "What are the key metrics to evaluate distributed team performance?",
-      "answer": "Key metrics include velocity, defect rates, code quality, and team satisfaction, adapted to the distributed context.",
-      "tags": [
-        "metrics"
-      ]
-    },
-    {
-      "question": "How does cultural diversity affect distributed software development?",
-      "answer": "Cultural diversity can bring innovation but also challenges like miscommunication, differing work styles, and conflicts, which need to be managed effectively.",
-      "tags": [
-        "culture"
-      ]
-    },
-    {
-      "question": "What is the role of frequent visits in distributed development?",
-      "answer": "Frequent visits help build trust, improve collaboration, and provide opportunities for face-to-face interaction, which strengthens team dynamics.",
-      "tags": [
-        "visits"
-      ]
-    },
-    {
-      "question": "What are the main challenges in distributed software development?",
-      "answer": "Challenges include communication gaps, cultural differences, coordination issues, and maintaining quality across distributed teams.",
-      "tags": [
-        "Challenges"
-      ]
-    },
-    {
-      "question": "How can organizations overcome communication barriers in distributed teams?",
-      "answer": "Using multiple communication tools, establishing clear protocols, and promoting regular interactions help overcome communication barriers.",
-      "tags": [
-        "communication"
-      ]
-    },
-    {
-      "question": "Why is alignment of time zones critical in distributed teams?",
-      "answer": "Alignment ensures overlapping work hours, enabling real-time collaboration and quicker issue resolution.",
-      "tags": [
-        "time zones"
-      ]
-    },
-    {
-      "question": "How can distributed teams handle knowledge loss due to turnover?",
-      "answer": "Effective documentation, knowledge sharing sessions, and mentoring programs can mitigate knowledge loss from turnover.",
-      "tags": [
-        "knowledge loss"
-      ]
-    },
-    {
-      "question": "How does the use of sprint retrospectives benefit distributed teams?",
-      "answer": "Sprint retrospectives enable teams to reflect on processes, identify improvement areas, and adapt practices to distributed challenges.",
-      "tags": [
-        "retrospectives"
-      ]
-    },
-    {
-      "question": "What frameworks are most suitable for managing distributed software projects?",
-      "answer": "Frameworks like SAFe, LeSS, and Disciplined Agile can provide structure, while tools like Jira, Trello, Slack, and Zoom enhance collaboration.",
-      "tags": [
-        "frameworks",
-        "Collaboration Tools"
-      ]
-    },
-    {
-      "question": "How does distributed development impact project budgets?",
-      "answer": "Distributed development can reduce costs through global talent acquisition and reduced physical office space needs, but it may increase spending on tools, infrastructure, and coordination.",
-      "tags": [
-        "economic impact",
-        "budgets"
-      ]
-    },
-    {
-      "question": "What are the primary security concerns in distributed software development?",
-      "answer": "Risks include data breaches, insecure communication channels, and unauthorized access. Solutions involve VPNs, end-to-end encryption, and strict access control policies.",
-      "tags": [
-        "distributed development",
-        "security"
-      ]
-    },
-    {
-      "question": "How does the absence of physical presence affect team dynamics in distributed settings?",
-      "answer": "It can reduce bonding and trust. Virtual team-building activities, frequent video calls, and recognition programs can mitigate this.",
-      "tags": [
-        "trust",
-        "team dynamics"
       ]
     }
   ]
